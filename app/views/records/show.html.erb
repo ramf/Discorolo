@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Descrição/Vara:</strong>
+  <%= @record.description%>
+</p>
+
+<p>
+  <strong>Origem:</strong>
+  <%= @record.origin %>
+</p>
+
+<p>
+  <strong>Tópico:</strong>
+  <%= @record.topic %>
+</p>
+
+<p>
+  <strong>Parte:</strong>
+  <%= @record.part %>
+</p>
+
+<p>
+  <strong>Data do Protocolo:</strong>
+  <%= @record.dataprotocol %>
+</p>
+
+<p>
+  <strong>Data do Registro:</strong>
+  <%= @record.datarecord %>
+</p>
+
+
+
+<%= link_to 'Editar', edit_record_path(@record) %> |
+<%= link_to 'Correspondências', records_path %>

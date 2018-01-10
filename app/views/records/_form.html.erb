@@ -1,0 +1,52 @@
+<%= form_with(model: record, local: true) do |form| %>
+  <% if record.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(record.errors.count, "error") %> prohibited this record from being saved:</h2>
+
+      <ul>
+      <% record.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.select :description, ['1ª Registro Público','2ª Registro Publico','1ª Registro Público - Retorno', '2ª Registro Público - Retorno'], id: :record_description %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :origin %>
+    <%= form.text_field :origin, id: :record_origin, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :topic %>
+    <%= form.text_field :topic, id: :record_topic, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :part %>
+    <%= form.text_field :part, id: :record_part, class: "form-control" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :datarecord %>
+    <%= form.date_field :datarecord, id: :record_datarecord%>
+  </div>
+
+  <div class="field">
+    <%= form.label :dataprotocol %>
+    <%= form.date_field :dataprotocol, id: :record_dataprotocol%>
+  </div>
+
+
+
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,23 @@
+pt-BR:
+  enums:
+    user:
+      role_id:
+        admin: "Administrador"
+        user: "Usuário"
+  activerecord:
+    models:
+      record: "Registro"
+      user: "Usuário"
+    attributes:
+      record:
+        description: "Descrição"
+        datarecord: "Data do Registro"
+        dataprotocol: "Data do Protocolo"
+        origin: "Origem"
+        topic: "Tópico"
+        part: "Parte"
+      user:
+        name: "Nome"
+        email: "Email"
+        password: "Senha"
+        role_id: "Perfil"

@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Registros</h1>
+
+<!-- <div class="col-md-12">
+  <%= link_to t("app.new", name: "Registro"), new_record_path, class: "btn btn-sucess" %>
+</div> -->
+
+<table>
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Origem</th>
+      <th>Tópico</th>
+      <th>Parte</th>
+      <th>Data do protocolo</th>
+      <th>Data do registro</th>
+
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @records.each do |record| %>
+      <tr>
+        <td><%= record.description %></td>
+        <td><%= record.origin %></td>
+        <td><%= record.topic %></td>
+        <td><%= record.part %></td>
+        <td><%= record.dataprotocol %></td>
+        <td><%= record.datarecord %></td>
+        <!-- <td><%= link_to 'Mostrar', record %></td> -->
+        <td><%= link_to 'Editar', edit_record_path(record), class: "btn btn-primary" %></td>
+        <td><%= link_to 'Excluir', record, method: :delete, class: "btn btn-danger", data: { confirm: 'Tem Certeza que deseja excluir esse registro?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nova Correspondência', new_record_path, class: "btn btn-success" %>
