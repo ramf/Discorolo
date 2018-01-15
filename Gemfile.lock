@@ -43,6 +43,9 @@ GEM
     arel (8.0.0)
     bcrypt (3.1.11)
     bindex (0.5.0)
+    bootstrap-sass-rails (2.2.2.1)
+      railties (>= 3.1.0)
+      sass-rails (>= 3.1.0)
     bower-rails (0.11.0)
     builder (3.2.3)
     byebug (9.1.0)
@@ -85,6 +88,8 @@ GEM
     faker (1.7.3)
       i18n (~> 0.5)
     ffi (1.9.18)
+    font-awesome-rails (4.7.0.2)
+      railties (>= 3.2, < 5.2)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     gruff (0.7.0)
@@ -246,6 +251,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass-rails (~> 2.2.2.0)
   bower-rails
   byebug
   capybara (~> 2.13)
@@ -255,6 +261,7 @@ DEPENDENCIES
   enum_help
   factory_girl_rails
   faker
+  font-awesome-rails
   gruff
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)

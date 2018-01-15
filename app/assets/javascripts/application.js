@@ -13,4 +13,5 @@
 //= require rails-ujs
 //= require turbolinks
 //= require jquery-maskedinput/src/jquery.maskedinput.js
+//= require twitter/bootstrap
 //= require_tree .

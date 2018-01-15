@@ -6,7 +6,7 @@
   <%= link_to t("app.new", name: "Registro"), new_record_path, class: "btn btn-sucess" %>
 </div> -->
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th>Descrição</th>
@@ -30,8 +30,10 @@
         <td><%= record.dataprotocol %></td>
         <td><%= record.datarecord %></td>
         <!-- <td><%= link_to 'Mostrar', record %></td> -->
-        <td><%= link_to 'Editar', edit_record_path(record), class: "btn btn-primary" %></td>
-        <td><%= link_to 'Excluir', record, method: :delete, class: "btn btn-danger", data: { confirm: 'Tem Certeza que deseja excluir esse registro?' } %></td>
+
+        <td><%= link_to fa_icon("pencil-square-o", title: "Editar"), edit_record_path(record), class: "btn btn-info" %></td>
+        <td><%= link_to fa_icon("trash-o", title: "Excluir"), record, method: :delete, data: { confirm: 'Você tem certeza?' }, class: "btn btn-danger" %></td>
+        
       </tr>
     <% end %>
   </tbody>
