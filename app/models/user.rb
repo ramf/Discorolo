@@ -9,4 +9,6 @@ class User < ApplicationRecord
     admin: 1,
     user: 2
   }
+
+  
 end

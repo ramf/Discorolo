@@ -33,21 +33,21 @@
     <%= form.text_field :part, id: :record_part, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :datarecord %>
-    <%= form.date_field :datarecord, id: :record_datarecord%>
-  </div>
 
   <div class="field">
     <%= form.label :dataprotocol %>
-    <%= form.date_field :dataprotocol, id: :record_dataprotocol%>
+    <%= form.date_select :dataprotocol, id: :record_dataprotocol%>
   </div>
 
+  <div class="field">
+    <%= form.label :datarecord %>
+    <%= form.date_select :datarecord, id: :record_datarecord%>
+  </div>
 
 
 
   <div class="actions">
     <%= form.submit class: "btn-success"  %>
-    
+
   </div>
 <% end %>

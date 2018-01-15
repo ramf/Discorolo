@@ -11094,3 +11094,2839 @@ Processing by RecordsController#index as HTML
 Completed 200 OK in 220ms (Views: 217.7ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/records" for 127.0.0.1 at 2018-01-15 10:51:06 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (1528.9ms)
+  Rendered layouts/_menu.html.erb (6.4ms)
+Completed 200 OK in 2483ms (Views: 2403.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 10:51:11 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_menu.html.erb (5.7ms)
+Completed 200 OK in 183ms (Views: 179.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 10:51:29 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_menu.html.erb (1.8ms)
+Completed 200 OK in 76ms (Views: 71.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 10:51:30 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_menu.html.erb (6.3ms)
+Completed 200 OK in 232ms (Views: 228.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 10:51:31 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (71.0ms)
+  Rendered records/new.html.erb within layouts/application (72.2ms)
+  Rendered layouts/_menu.html.erb (5.5ms)
+Completed 200 OK in 293ms (Views: 279.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/records" for 127.0.0.1 at 2018-01-15 10:51:53 -0300
+Processing by RecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iqq+yQaVI0KPKwJeZd26/D7b2056fwBmHuxZ+75wpCQlVRcN8ns9AYwb4wConC+yNQzf/dyTdxuT6K1tshABsA==", "record"=>{"description"=>"1ª Registro Público", "origin"=>"swsws", "topic"=>"wswsws", "part"=>"dwedfwf", "datarecord"=>"2018-01-05", "dataprotocol"=>"2018-01-24"}, "commit"=>"Criar Registro"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (119.0ms)[0m  [1m[32mINSERT INTO "records" ("description", "origin", "topic", "part", "created_at", "updated_at", "datarecord", "dataprotocol") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["description", "1ª Registro Público"], ["origin", "swsws"], ["topic", "wswsws"], ["part", "dwedfwf"], ["created_at", "2018-01-15 13:51:53.956637"], ["updated_at", "2018-01-15 13:51:53.956637"], ["datarecord", "2018-01-05"], ["dataprotocol", "2018-01-24"]]
+  [1m[35m (146.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records/28
+Completed 302 Found in 274ms (ActiveRecord: 266.2ms)
+
+
+Started GET "/records/28" for 127.0.0.1 at 2018-01-15 10:51:54 -0300
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering records/show.html.erb within layouts/application
+  Rendered records/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_menu.html.erb (4.7ms)
+Completed 200 OK in 327ms (Views: 214.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 10:51:59 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_menu.html.erb (5.0ms)
+Completed 200 OK in 226ms (Views: 223.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 10:55:11 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_menu.html.erb (2.1ms)
+Completed 200 OK in 83ms (Views: 79.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 10:55:14 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_menu.html.erb (5.8ms)
+Completed 200 OK in 213ms (Views: 209.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 10:55:15 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_menu.html.erb (5.2ms)
+Completed 200 OK in 226ms (Views: 222.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 10:55:26 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_menu.html.erb (1.3ms)
+Completed 200 OK in 73ms (Views: 70.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 10:55:28 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_menu.html.erb (6.9ms)
+Completed 200 OK in 237ms (Views: 233.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 10:55:29 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (4.0ms)
+  Rendered records/new.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_menu.html.erb (6.0ms)
+Completed 200 OK in 209ms (Views: 206.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/records" for 127.0.0.1 at 2018-01-15 10:55:40 -0300
+Processing by RecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eYEWFu6KEbppESNDVJmz6h+Zfa3b5ujl97G3HzYNo0nWfr/SGmQP+Wohwh2Z2CakFE55Hn0Kn5h6tUOJOm0G3Q==", "record"=>{"description"=>"1ª Registro Público", "origin"=>"ssdsd", "topic"=>"sdsdsdsd", "part"=>"sdfgsgg", "datarecord"=>"2018-01-11", "dataprotocol"=>"2018-01-20"}, "commit"=>"Criar Registro"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "records" ("description", "origin", "topic", "part", "created_at", "updated_at", "datarecord", "dataprotocol") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["description", "1ª Registro Público"], ["origin", "ssdsd"], ["topic", "sdsdsdsd"], ["part", "sdfgsgg"], ["created_at", "2018-01-15 13:55:40.188641"], ["updated_at", "2018-01-15 13:55:40.188641"], ["datarecord", "2018-01-11"], ["dataprotocol", "2018-01-20"]]
+  [1m[35m (145.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records/29
+Completed 302 Found in 150ms (ActiveRecord: 146.8ms)
+
+
+Started GET "/records/29" for 127.0.0.1 at 2018-01-15 10:55:40 -0300
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  Rendering records/show.html.erb within layouts/application
+  Rendered records/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_menu.html.erb (5.7ms)
+Completed 200 OK in 216ms (Views: 212.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 10:55:43 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_menu.html.erb (6.4ms)
+Completed 200 OK in 213ms (Views: 210.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 10:57:23 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_menu.html.erb (1.6ms)
+Completed 200 OK in 91ms (Views: 88.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 10:57:24 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_menu.html.erb (5.9ms)
+Completed 200 OK in 225ms (Views: 221.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:08:37 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (17.0ms)
+  Rendered layouts/_menu.html.erb (3.4ms)
+Completed 200 OK in 1064ms (Views: 1003.1ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 11:08:40 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (4.0ms)
+  Rendered records/new.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_menu.html.erb (5.1ms)
+Completed 200 OK in 224ms (Views: 212.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/records" for 127.0.0.1 at 2018-01-15 11:09:02 -0300
+Processing by RecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eOq7GSu9maOIhJzZAmY0M3IuKUmKZZLXWYLRweauv4TXFRLd31OH4Iu0fYfPJ6F9efkt+iyJ5arUhiVX6s4aEA==", "record"=>{"description"=>"1ª Registro Público", "origin"=>"ssdsd", "topic"=>"fhhh", "part"=>"erfet", "datarecord"=>"2018-01-04", "dataprotocol"=>"2018-01-18"}, "commit"=>"Criar Registro"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "records" ("description", "origin", "topic", "part", "created_at", "updated_at", "datarecord", "dataprotocol") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["description", "1ª Registro Público"], ["origin", "ssdsd"], ["topic", "fhhh"], ["part", "erfet"], ["created_at", "2018-01-15 14:09:02.422581"], ["updated_at", "2018-01-15 14:09:02.422581"], ["datarecord", "2018-01-04"], ["dataprotocol", "2018-01-18"]]
+  [1m[35m (329.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records/30
+Completed 302 Found in 335ms (ActiveRecord: 330.6ms)
+
+
+Started GET "/records/30" for 127.0.0.1 at 2018-01-15 11:09:02 -0300
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  Rendering records/show.html.erb within layouts/application
+  Rendered records/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_menu.html.erb (1.4ms)
+Completed 200 OK in 104ms (Views: 75.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:09:04 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_menu.html.erb (5.7ms)
+Completed 200 OK in 226ms (Views: 221.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:13:07 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_menu.html.erb (1.5ms)
+Completed 200 OK in 81ms (Views: 78.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:13:09 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_menu.html.erb (6.4ms)
+Completed 200 OK in 234ms (Views: 231.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:13:09 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.1ms)
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:13:09 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_menu.html.erb (9.1ms)
+  Rendered layouts/_menu.html.erb (2.6ms)
+Completed 200 OK in 275ms (Views: 271.1ms | ActiveRecord: 0.5ms)
+
+
+Completed 200 OK in 101ms (Views: 96.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:13:10 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_menu.html.erb (2.7ms)
+Completed 200 OK in 76ms (Views: 72.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:13:10 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.7ms)
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:13:10 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (7.5ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (12.2ms)
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:13:10 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_menu.html.erb (5.6ms)
+  Rendered layouts/_menu.html.erb (2.7ms)
+Completed 200 OK in 321ms (Views: 318.4ms | ActiveRecord: 0.4ms)
+
+
+Completed 200 OK in 169ms (Views: 157.7ms | ActiveRecord: 7.8ms)
+
+
+  Rendered layouts/_menu.html.erb (1.5ms)
+Completed 200 OK in 134ms (Views: 125.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 11:13:12 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (3.5ms)
+  Rendered records/new.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_menu.html.erb (1.4ms)
+Completed 200 OK in 77ms (Views: 73.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/records" for 127.0.0.1 at 2018-01-15 11:13:26 -0300
+Processing by RecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ALy+uoZU4kAnGghoZIES9VF0oEMTBnFUTB+E36CXcf6vQxd+crr8AyQq6TapwIe7WqOk8LXqBinBG3BJrPfUag==", "record"=>{"description"=>"1ª Registro Público", "origin"=>"aassa", "topic"=>"asasas", "part"=>"asasas", "datarecord"=>"2018-01-27", "dataprotocol"=>"2018-01-20"}, "commit"=>"Criar Registro"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "records" ("description", "origin", "topic", "part", "created_at", "updated_at", "datarecord", "dataprotocol") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["description", "1ª Registro Público"], ["origin", "aassa"], ["topic", "asasas"], ["part", "asasas"], ["created_at", "2018-01-15 14:13:26.306908"], ["updated_at", "2018-01-15 14:13:26.306908"], ["datarecord", "2018-01-27"], ["dataprotocol", "2018-01-20"]]
+  [1m[35m (143.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records/31
+Completed 302 Found in 149ms (ActiveRecord: 144.6ms)
+
+
+Started GET "/records/31" for 127.0.0.1 at 2018-01-15 11:13:26 -0300
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering records/show.html.erb within layouts/application
+  Rendered records/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_menu.html.erb (6.4ms)
+Completed 200 OK in 244ms (Views: 239.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:13:30 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_menu.html.erb (4.6ms)
+Completed 200 OK in 222ms (Views: 218.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:13:43 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_menu.html.erb (1.4ms)
+Completed 200 OK in 63ms (Views: 60.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:13:44 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_menu.html.erb (6.2ms)
+Completed 200 OK in 228ms (Views: 223.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:13:44 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_menu.html.erb (6.0ms)
+Completed 200 OK in 211ms (Views: 209.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:13:45 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_menu.html.erb (4.7ms)
+Completed 200 OK in 151ms (Views: 147.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:13:45 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_menu.html.erb (1.5ms)
+Completed 200 OK in 165ms (Views: 161.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:13:45 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_menu.html.erb (2.4ms)
+Completed 200 OK in 77ms (Views: 74.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 11:13:46 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (3.3ms)
+  Rendered records/new.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_menu.html.erb (1.9ms)
+Completed 200 OK in 76ms (Views: 73.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/records" for 127.0.0.1 at 2018-01-15 11:13:57 -0300
+Processing by RecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7+/nbH1h7RL7w9u/yve6BsnZaOZiw/H7/M/tQ1uq5klAEE6oiY/zUfjzOuEHti9Iwg5sVcQvhoZxyxnVV8pD3Q==", "record"=>{"description"=>"1ª Registro Público", "origin"=>"frefr", "topic"=>"rferf", "part"=>"freferf", "datarecord"=>"2018-01-01", "dataprotocol"=>"2018-01-06"}, "commit"=>"Criar Registro"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "records" ("description", "origin", "topic", "part", "created_at", "updated_at", "datarecord", "dataprotocol") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["description", "1ª Registro Público"], ["origin", "frefr"], ["topic", "rferf"], ["part", "freferf"], ["created_at", "2018-01-15 14:13:57.613070"], ["updated_at", "2018-01-15 14:13:57.613070"], ["datarecord", "2018-01-01"], ["dataprotocol", "2018-01-06"]]
+  [1m[35m (164.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records/32
+Completed 302 Found in 169ms (ActiveRecord: 165.3ms)
+
+
+Started GET "/records/32" for 127.0.0.1 at 2018-01-15 11:13:57 -0300
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering records/show.html.erb within layouts/application
+  Rendered records/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_menu.html.erb (4.6ms)
+Completed 200 OK in 221ms (Views: 216.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:14:00 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.4ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_menu.html.erb (5.3ms)
+Completed 200 OK in 234ms (Views: 230.5ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/records/32" for 127.0.0.1 at 2018-01-15 11:14:13 -0300
+Processing by RecordsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9wGK92dLtx4FTeFTflZ7FYEDqiSc/UBB0WHZcyVnOKA11i5RLLV/+7UfysWtewG4KBuhhM5CgcmBRFH+TJGLTg==", "id"=>"32"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 32]]
+  [1m[35m (115.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records
+Completed 302 Found in 123ms (ActiveRecord: 117.9ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:14:14 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_menu.html.erb (2.5ms)
+Completed 200 OK in 87ms (Views: 84.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:15:09 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_menu.html.erb (2.7ms)
+Completed 200 OK in 91ms (Views: 88.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 11:15:10 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (94.4ms)
+  Rendered records/new.html.erb within layouts/application (95.7ms)
+  Rendered layouts/_menu.html.erb (4.7ms)
+Completed 200 OK in 296ms (Views: 293.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/records" for 127.0.0.1 at 2018-01-15 11:15:55 -0300
+Processing by RecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IPqh1k/bGxFkHgQtiTaWKY7LA/RYyb20jVVAzDK6VGqPBQgSuzUFUmcu5XNEdwNnhRwHR/4lyskAUbRaPtrx/g==", "record"=>{"description"=>"1ª Registro Público", "origin"=>"mjtg", "topic"=>"efwere", "part"=>"grtgrtt", "datarecord"=>"2018-01-20", "dataprotocol(3i)"=>"17", "dataprotocol(2i)"=>"1", "dataprotocol(1i)"=>"2016"}, "commit"=>"Criar Registro"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "records" ("description", "origin", "topic", "part", "created_at", "updated_at", "datarecord", "dataprotocol") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["description", "1ª Registro Público"], ["origin", "mjtg"], ["topic", "efwere"], ["part", "grtgrtt"], ["created_at", "2018-01-15 14:15:55.269250"], ["updated_at", "2018-01-15 14:15:55.269250"], ["datarecord", "2018-01-20"], ["dataprotocol", "2016-01-17"]]
+  [1m[35m (284.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records/33
+Completed 302 Found in 327ms (ActiveRecord: 286.1ms)
+
+
+Started GET "/records/33" for 127.0.0.1 at 2018-01-15 11:15:55 -0300
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  Rendering records/show.html.erb within layouts/application
+  Rendered records/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_menu.html.erb (6.3ms)
+Completed 200 OK in 236ms (Views: 231.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:15:59 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (10.2ms)
+  Rendered layouts/_menu.html.erb (6.4ms)
+Completed 200 OK in 226ms (Views: 221.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 11:16:03 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (4.5ms)
+  Rendered records/new.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_menu.html.erb (3.7ms)
+Completed 200 OK in 210ms (Views: 207.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:16:09 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_menu.html.erb (6.2ms)
+Completed 200 OK in 205ms (Views: 202.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:16:35 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_menu.html.erb (1.5ms)
+Completed 200 OK in 75ms (Views: 64.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:16:36 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_menu.html.erb (6.9ms)
+Completed 200 OK in 232ms (Views: 229.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:16:36 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.9ms)
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:16:37 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_menu.html.erb (20.2ms)
+Completed 200 OK in 229ms (Views: 227.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:16:37 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_menu.html.erb (4.2ms)
+Completed 200 OK in 167ms (Views: 160.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:16:37 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_menu.html.erb (1.7ms)
+Completed 200 OK in 241ms (Views: 236.9ms | ActiveRecord: 0.5ms)
+
+
+  Rendered layouts/_menu.html.erb (2.5ms)
+Completed 200 OK in 159ms (Views: 155.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 11:16:38 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (4.2ms)
+  Rendered records/new.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_menu.html.erb (1.6ms)
+Completed 200 OK in 79ms (Views: 76.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/records" for 127.0.0.1 at 2018-01-15 11:16:47 -0300
+Processing by RecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L/4o623qjL22JXLwX31DwgspH4hZcETAZOfYuS0HYQaAAYEvmQSS/rUVk66SPNaMAP4bO/+cM73p4ywvIWfEkg==", "record"=>{"description"=>"1ª Registro Público", "origin"=>"efre4r", "topic"=>"gyjy6j", "part"=>"jytjtyjytj", "datarecord"=>"2018-01-27", "dataprotocol(3i)"=>"15", "dataprotocol(2i)"=>"1", "dataprotocol(1i)"=>"2018"}, "commit"=>"Criar Registro"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "records" ("description", "origin", "topic", "part", "created_at", "updated_at", "datarecord", "dataprotocol") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["description", "1ª Registro Público"], ["origin", "efre4r"], ["topic", "gyjy6j"], ["part", "jytjtyjytj"], ["created_at", "2018-01-15 14:16:47.233319"], ["updated_at", "2018-01-15 14:16:47.233319"], ["datarecord", "2018-01-27"], ["dataprotocol", "2018-01-15"]]
+  [1m[35m (119.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records/34
+Completed 302 Found in 126ms (ActiveRecord: 120.7ms)
+
+
+Started GET "/records/34" for 127.0.0.1 at 2018-01-15 11:16:47 -0300
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  Rendering records/show.html.erb within layouts/application
+  Rendered records/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_menu.html.erb (4.8ms)
+Completed 200 OK in 220ms (Views: 217.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:16:51 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_menu.html.erb (6.3ms)
+Completed 200 OK in 210ms (Views: 206.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 11:16:56 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (4.9ms)
+  Rendered records/new.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_menu.html.erb (4.8ms)
+Completed 200 OK in 221ms (Views: 218.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:17:06 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_menu.html.erb (6.1ms)
+Completed 200 OK in 216ms (Views: 214.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 11:17:20 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (4.2ms)
+  Rendered records/new.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_menu.html.erb (1.5ms)
+Completed 200 OK in 87ms (Views: 84.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 11:17:38 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (4.4ms)
+  Rendered records/new.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_menu.html.erb (1.2ms)
+Completed 200 OK in 65ms (Views: 62.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 11:18:08 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (5.9ms)
+  Rendered records/new.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_menu.html.erb (2.0ms)
+Completed 200 OK in 106ms (Views: 76.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 11:18:08 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (4.6ms)
+  Rendered records/new.html.erb within layouts/application (5.6ms)
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 11:18:09 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (6.1ms)
+  Rendered records/new.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_menu.html.erb (4.2ms)
+Completed 200 OK in 227ms (Views: 224.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 11:18:09 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (14.0ms)
+  Rendered records/new.html.erb within layouts/application (15.3ms)
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 11:18:09 -0300
+Processing by RecordsController#new as HTML
+  Rendered layouts/_menu.html.erb (5.1ms)
+  Rendered layouts/_menu.html.erb (7.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 140ms (Views: 135.3ms | ActiveRecord: 0.3ms)
+
+
+Completed 200 OK in 287ms (Views: 281.1ms | ActiveRecord: 0.8ms)
+
+
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (6.3ms)
+  Rendered records/new.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_menu.html.erb (2.5ms)
+Completed 200 OK in 89ms (Views: 83.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 11:18:09 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (8.2ms)
+  Rendered records/new.html.erb within layouts/application (9.8ms)
+  Rendered layouts/_menu.html.erb (1.6ms)
+Completed 200 OK in 95ms (Views: 92.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 11:18:34 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (765.1ms)
+  Rendered records/new.html.erb within layouts/application (768.0ms)
+  Rendered layouts/_menu.html.erb (7.5ms)
+Completed 200 OK in 2527ms (Views: 2463.2ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/records" for 127.0.0.1 at 2018-01-15 11:18:45 -0300
+Processing by RecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Qb94Si3kOsUYe4WG3EYOU9oZgJ5K8O8QBHVMigrpJiGDaNzsZhryIKgprhAPa3T+cwGLPhhPLphUUMQHYx+Vzw==", "record"=>{"description"=>"1ª Registro Público", "origin"=>"g5u45y45y", "topic"=>"45y54y45y", "part"=>"t34t534t4", "datarecord(3i)"=>"15", "datarecord(2i)"=>"1", "datarecord(1i)"=>"2018", "dataprotocol(3i)"=>"20", "dataprotocol(2i)"=>"1", "dataprotocol(1i)"=>"2018"}, "commit"=>"Criar Registro"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.9ms)[0m  [1m[32mINSERT INTO "records" ("description", "origin", "topic", "part", "created_at", "updated_at", "datarecord", "dataprotocol") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["description", "1ª Registro Público"], ["origin", "g5u45y45y"], ["topic", "45y54y45y"], ["part", "t34t534t4"], ["created_at", "2018-01-15 14:18:45.082546"], ["updated_at", "2018-01-15 14:18:45.082546"], ["datarecord", "2018-01-15"], ["dataprotocol", "2018-01-20"]]
+  [1m[35m (106.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records/35
+Completed 302 Found in 121ms (ActiveRecord: 112.1ms)
+
+
+Started GET "/records/35" for 127.0.0.1 at 2018-01-15 11:18:45 -0300
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  Rendering records/show.html.erb within layouts/application
+  Rendered records/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_menu.html.erb (3.9ms)
+Completed 200 OK in 254ms (Views: 215.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:18:47 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_menu.html.erb (5.5ms)
+Completed 200 OK in 225ms (Views: 220.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 11:19:25 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (4.6ms)
+  Rendered records/new.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_menu.html.erb (1.6ms)
+Completed 200 OK in 124ms (Views: 81.3ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/records" for 127.0.0.1 at 2018-01-15 11:19:30 -0300
+Processing by RecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Dpb3axLNhf1ccMlWCaDhIWzilR5w2dLXmkCbsVfZjEyhaV6v5iObvl9AKAjE4XRvZzWRrdY1paoXRG8nW7kp2A==", "record"=>{"description"=>"1ª Registro Público", "origin"=>"wswfdqwf", "topic"=>"fqwfqwf", "part"=>"wdfqwfwqf", "datarecord(3i)"=>"15", "datarecord(2i)"=>"1", "datarecord(1i)"=>"2018", "dataprotocol(3i)"=>"15", "dataprotocol(2i)"=>"1", "dataprotocol(1i)"=>"2018"}, "commit"=>"Criar Registro"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "records" ("description", "origin", "topic", "part", "created_at", "updated_at", "datarecord", "dataprotocol") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["description", "1ª Registro Público"], ["origin", "wswfdqwf"], ["topic", "fqwfqwf"], ["part", "wdfqwfwqf"], ["created_at", "2018-01-15 14:19:30.191112"], ["updated_at", "2018-01-15 14:19:30.191112"], ["datarecord", "2018-01-15"], ["dataprotocol", "2018-01-15"]]
+  [1m[35m (144.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records/36
+Completed 302 Found in 151ms (ActiveRecord: 146.4ms)
+
+
+Started GET "/records/36" for 127.0.0.1 at 2018-01-15 11:19:30 -0300
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  Rendering records/show.html.erb within layouts/application
+  Rendered records/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_menu.html.erb (6.7ms)
+Completed 200 OK in 243ms (Views: 239.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:19:32 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_menu.html.erb (6.0ms)
+Completed 200 OK in 207ms (Views: 202.7ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/records/36" for 127.0.0.1 at 2018-01-15 11:19:53 -0300
+Processing by RecordsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ZSwGqTlPoHVw3EjflkWwu8Hf0uwn110bsr4A6IqbC4Sn+6IPcrFokMCOY0lFaMoWaMfZTHVonJPim4hl4224ag==", "id"=>"36"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 36]]
+  [1m[35m (90.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records
+Completed 302 Found in 98ms (ActiveRecord: 92.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:19:53 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.4ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_menu.html.erb (2.7ms)
+Completed 200 OK in 102ms (Views: 99.6ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/records/35" for 127.0.0.1 at 2018-01-15 11:19:55 -0300
+Processing by RecordsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"M1b1fV9s4Tbloiv28lMM3l1P75XQ+no6NQehR1zy8VbxgVHbFJIp01XwAGAhfnZz9FfkNYJFu7JlIinKNQRCuA==", "id"=>"35"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 35]]
+  [1m[35m (127.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records
+Completed 302 Found in 133ms (ActiveRecord: 128.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:19:55 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_menu.html.erb (6.2ms)
+Completed 200 OK in 221ms (Views: 217.4ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/records/34" for 127.0.0.1 at 2018-01-15 11:19:56 -0300
+Processing by RecordsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VeLHYBDQ8ItxgSLcJGiPbBmZXTPxbTpA6Bls6XLTa0qXNWPGWy44bsHTCUr3RfXBsIFWk6PS+8i4PORkGyXYpA==", "id"=>"34"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 34]]
+  [1m[35m (82.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records
+Completed 302 Found in 89ms (ActiveRecord: 84.0ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:19:57 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_menu.html.erb (4.4ms)
+Completed 200 OK in 235ms (Views: 232.8ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/records/33" for 127.0.0.1 at 2018-01-15 11:19:58 -0300
+Processing by RecordsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/8kYkiUUCfrFsLXsLxACiMsdwuSVV1mGRB0lcw3aBYg9Hrw0burBH3Xinnr8PXglYgXJRMfomA4UOK3+ZCy2Zg==", "id"=>"33"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 33]]
+  [1m[35m (132.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records
+Completed 302 Found in 137ms (ActiveRecord: 133.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:19:58 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_menu.html.erb (7.3ms)
+Completed 200 OK in 230ms (Views: 227.0ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/records/31" for 127.0.0.1 at 2018-01-15 11:20:00 -0300
+Processing by RecordsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6VqeBFm10gP6FGWHCMPKf/rKsuHVMmAzuKElfxIBe9QrjTqiEksa5kpGThHb7rDSU9K5QYeNobvohK3ye/fIOg==", "id"=>"31"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 31]]
+  [1m[35m (172.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records
+Completed 302 Found in 179ms (ActiveRecord: 173.4ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:20:01 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_menu.html.erb (4.6ms)
+Completed 200 OK in 224ms (Views: 220.5ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/records/30" for 127.0.0.1 at 2018-01-15 11:20:03 -0300
+Processing by RecordsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NUjCg/DV1z9zF23CfARmIg5mbX7oPFPQmzj+heEb2rb3n2Yluysf2sNFRlSvKRyPp35m3rqDkljLHXYIiO1pWA==", "id"=>"30"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 30]]
+  [1m[35m (153.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records
+Completed 302 Found in 160ms (ActiveRecord: 154.8ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:20:03 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_menu.html.erb (6.9ms)
+Completed 200 OK in 239ms (Views: 235.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:21:28 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (11.7ms)
+  Rendered layouts/_menu.html.erb (1.6ms)
+Completed 200 OK in 116ms (Views: 89.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:21:29 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.5ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_menu.html.erb (5.5ms)
+Completed 200 OK in 232ms (Views: 227.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:21:30 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.6ms)
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:21:30 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_menu.html.erb (5.9ms)
+Completed 200 OK in 255ms (Views: 251.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:21:30 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (5.1ms)
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:21:30 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_menu.html.erb (19.9ms)
+Completed 200 OK in 345ms (Views: 340.0ms | ActiveRecord: 0.8ms)
+
+
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.4ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_menu.html.erb (3.2ms)
+Completed 200 OK in 246ms (Views: 242.6ms | ActiveRecord: 0.6ms)
+
+
+  Rendered layouts/_menu.html.erb (2.2ms)
+Completed 200 OK in 137ms (Views: 111.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:21:30 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_menu.html.erb (1.6ms)
+Completed 200 OK in 76ms (Views: 74.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:21:47 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_menu.html.erb (1.5ms)
+Completed 200 OK in 63ms (Views: 60.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:21:48 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_menu.html.erb (5.2ms)
+Completed 200 OK in 248ms (Views: 245.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:21:49 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.2ms)
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:21:49 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_menu.html.erb (17.2ms)
+Completed 200 OK in 195ms (Views: 190.9ms | ActiveRecord: 0.6ms)
+
+
+  Rendered layouts/_menu.html.erb (6.0ms)
+Completed 200 OK in 220ms (Views: 215.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:21:49 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_menu.html.erb (2.7ms)
+Completed 200 OK in 82ms (Views: 79.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:21:50 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_menu.html.erb (1.6ms)
+Completed 200 OK in 80ms (Views: 77.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:21:50 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (7.7ms)
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:21:50 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_menu.html.erb (5.9ms)
+Completed 200 OK in 268ms (Views: 265.3ms | ActiveRecord: 0.5ms)
+
+
+  Rendered layouts/_menu.html.erb (1.9ms)
+Completed 200 OK in 113ms (Views: 107.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:21:50 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_menu.html.erb (1.5ms)
+Completed 200 OK in 91ms (Views: 83.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:21:50 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_menu.html.erb (1.5ms)
+Completed 200 OK in 86ms (Views: 83.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 11:21:51 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (6.0ms)
+  Rendered records/new.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_menu.html.erb (1.5ms)
+Completed 200 OK in 81ms (Views: 78.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/records" for 127.0.0.1 at 2018-01-15 11:21:53 -0300
+Processing by RecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yRuWiWBO46jYw2bcU1yDUhjhBOAqS49Q1Oqgp+eaO2Vm5D9NlKD969vzh4KeHRYcEzYAU4yn+C1Z7lQx6/qe8Q==", "record"=>{"description"=>"1ª Registro Público", "origin"=>"", "topic"=>"", "part"=>"", "datarecord(3i)"=>"15", "datarecord(2i)"=>"1", "datarecord(1i)"=>"2018", "dataprotocol(3i)"=>"15", "dataprotocol(2i)"=>"1", "dataprotocol(1i)"=>"2018"}, "commit"=>"Criar Registro"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (4.9ms)
+  Rendered records/new.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_menu.html.erb (4.8ms)
+Completed 200 OK in 237ms (Views: 232.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/records" for 127.0.0.1 at 2018-01-15 11:21:59 -0300
+Processing by RecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tILR+eUnz9psNYNnVNGrxMWrEwvvEri+HIbyWDin2El2VXVfrtkHP9xnqPGH/NFpbLMYq72teTZMo3rVUVFrpw==", "record"=>{"description"=>"1ª Registro Público", "origin"=>"qwqw", "topic"=>"qwqw", "part"=>"qeqeqe", "datarecord(3i)"=>"15", "datarecord(2i)"=>"1", "datarecord(1i)"=>"2018", "dataprotocol(3i)"=>"15", "dataprotocol(2i)"=>"1", "dataprotocol(1i)"=>"2018"}, "commit"=>"Criar Registro"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "records" ("description", "origin", "topic", "part", "created_at", "updated_at", "datarecord", "dataprotocol") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["description", "1ª Registro Público"], ["origin", "qwqw"], ["topic", "qwqw"], ["part", "qeqeqe"], ["created_at", "2018-01-15 14:21:59.197272"], ["updated_at", "2018-01-15 14:21:59.197272"], ["datarecord", "2018-01-15"], ["dataprotocol", "2018-01-15"]]
+  [1m[35m (153.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records/37
+Completed 302 Found in 158ms (ActiveRecord: 154.3ms)
+
+
+Started GET "/records/37" for 127.0.0.1 at 2018-01-15 11:21:59 -0300
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering records/show.html.erb within layouts/application
+  Rendered records/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_menu.html.erb (4.7ms)
+Completed 200 OK in 234ms (Views: 229.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:22:00 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_menu.html.erb (5.6ms)
+Completed 200 OK in 228ms (Views: 224.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:29:49 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (16.6ms)
+  Rendered layouts/_menu.html.erb (2.1ms)
+Completed 200 OK in 127ms (Views: 100.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:29:50 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_menu.html.erb (8.5ms)
+Completed 200 OK in 302ms (Views: 298.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:29:51 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (9.2ms)
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:29:51 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_menu.html.erb (3.7ms)
+Completed 200 OK in 262ms (Views: 257.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:29:51 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_menu.html.erb (6.3ms)
+Completed 200 OK in 139ms (Views: 133.2ms | ActiveRecord: 0.6ms)
+
+
+  Rendered layouts/_menu.html.erb (2.3ms)
+Completed 200 OK in 265ms (Views: 261.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:29:56 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_menu.html.erb (1.4ms)
+Completed 200 OK in 83ms (Views: 80.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:30:01 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.4ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (5.2ms)
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:30:01 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_menu.html.erb (13.6ms)
+Completed 200 OK in 259ms (Views: 255.6ms | ActiveRecord: 0.7ms)
+
+
+  Rendered layouts/_menu.html.erb (5.0ms)
+Completed 200 OK in 223ms (Views: 217.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:30:02 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_menu.html.erb (1.6ms)
+Completed 200 OK in 78ms (Views: 74.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:30:02 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.3ms)
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:30:02 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_menu.html.erb (5.4ms)
+Completed 200 OK in 251ms (Views: 247.9ms | ActiveRecord: 0.5ms)
+
+
+  Rendered layouts/_menu.html.erb (2.0ms)
+Completed 200 OK in 116ms (Views: 113.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:30:02 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_menu.html.erb (1.7ms)
+Completed 200 OK in 99ms (Views: 94.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 11:30:03 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (10.2ms)
+  Rendered records/new.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_menu.html.erb (1.6ms)
+Completed 200 OK in 96ms (Views: 93.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/records" for 127.0.0.1 at 2018-01-15 11:30:09 -0300
+Processing by RecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"//uexqM1Zmd+wIKekXxQNGM7+cu/wNWfRYAwSMSvJ7lQBDcCV9t4JH3wY8BcPcV6aOz9eBksouLIhMTeyM+CLQ==", "record"=>{"description"=>"1ª Registro Público", "origin"=>"jhjj", "topic"=>"eee", "part"=>"ddd", "datarecord(3i)"=>"15", "datarecord(2i)"=>"1", "datarecord(1i)"=>"2018", "dataprotocol(3i)"=>"15", "dataprotocol(2i)"=>"1", "dataprotocol(1i)"=>"2018"}, "commit"=>"Criar Registro"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "records" ("description", "origin", "topic", "part", "created_at", "updated_at", "datarecord", "dataprotocol") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["description", "1ª Registro Público"], ["origin", "jhjj"], ["topic", "eee"], ["part", "ddd"], ["created_at", "2018-01-15 14:30:09.888535"], ["updated_at", "2018-01-15 14:30:09.888535"], ["datarecord", "2018-01-15"], ["dataprotocol", "2018-01-15"]]
+  [1m[35m (157.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records/38
+Completed 302 Found in 163ms (ActiveRecord: 158.3ms)
+
+
+Started GET "/records/38" for 127.0.0.1 at 2018-01-15 11:30:10 -0300
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"38"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 38], ["LIMIT", 1]]
+  Rendering records/show.html.erb within layouts/application
+  Rendered records/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_menu.html.erb (4.4ms)
+Completed 200 OK in 222ms (Views: 217.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:30:11 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_menu.html.erb (4.1ms)
+Completed 200 OK in 221ms (Views: 216.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:35:12 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (22.8ms)
+  Rendered layouts/_menu.html.erb (3.0ms)
+Completed 200 OK in 266ms (Views: 218.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:35:13 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_menu.html.erb (5.7ms)
+Completed 200 OK in 312ms (Views: 308.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:35:14 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.4ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_menu.html.erb (5.5ms)
+Completed 200 OK in 231ms (Views: 227.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 11:35:15 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (5.9ms)
+  Rendered records/new.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_menu.html.erb (4.4ms)
+Completed 200 OK in 160ms (Views: 154.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 11:35:26 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (4.9ms)
+  Rendered records/new.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_menu.html.erb (1.8ms)
+Completed 200 OK in 83ms (Views: 80.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 11:35:27 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (5.1ms)
+  Rendered records/new.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_menu.html.erb (6.5ms)
+Completed 200 OK in 225ms (Views: 222.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 11:35:28 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (5.7ms)
+  Rendered records/new.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_menu.html.erb (6.5ms)
+Completed 200 OK in 245ms (Views: 241.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 11:35:28 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (6.8ms)
+  Rendered records/new.html.erb within layouts/application (8.3ms)
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 11:35:29 -0300
+  Rendered layouts/_menu.html.erb (3.8ms)
+Processing by RecordsController#new as HTML
+Completed 200 OK in 170ms (Views: 166.6ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (8.7ms)
+  Rendered records/new.html.erb within layouts/application (10.6ms)
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 11:35:29 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (5.2ms)
+  Rendered records/new.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_menu.html.erb (5.3ms)
+  Rendered layouts/_menu.html.erb (4.3ms)
+Completed 200 OK in 154ms (Views: 150.4ms | ActiveRecord: 0.2ms)
+
+
+Completed 200 OK in 287ms (Views: 281.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/records" for 127.0.0.1 at 2018-01-15 11:36:23 -0300
+Processing by RecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zh4VwhZI8yWz4QeIk04HdZbaqYQSt+BiSs4SYWXW9KykybFkXbY7wAOzLB5AY33YP8KiJEAIIeoa65rsDCBHQg==", "record"=>{"description"=>"1ª Registro Público", "origin"=>"qwerty", "topic"=>"qawsedrf", "part"=>"asdfgh", "datarecord(3i)"=>"15", "datarecord(2i)"=>"1", "datarecord(1i)"=>"2018", "dataprotocol(3i)"=>"15", "dataprotocol(2i)"=>"1", "dataprotocol(1i)"=>"2018"}, "commit"=>"Criar Registro"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.1ms)[0m  [1m[32mINSERT INTO "records" ("description", "origin", "topic", "part", "created_at", "updated_at", "datarecord", "dataprotocol") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["description", "1ª Registro Público"], ["origin", "qwerty"], ["topic", "qawsedrf"], ["part", "asdfgh"], ["created_at", "2018-01-15 14:36:23.211634"], ["updated_at", "2018-01-15 14:36:23.211634"], ["datarecord", "2018-01-15"], ["dataprotocol", "2018-01-15"]]
+  [1m[35m (135.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records/39
+Completed 302 Found in 145ms (ActiveRecord: 139.3ms)
+
+
+Started GET "/records/39" for 127.0.0.1 at 2018-01-15 11:36:23 -0300
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"39"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  Rendering records/show.html.erb within layouts/application
+  Rendered records/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_menu.html.erb (2.7ms)
+Completed 200 OK in 89ms (Views: 81.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:36:25 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.4ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_menu.html.erb (6.5ms)
+Completed 200 OK in 234ms (Views: 229.6ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/records/39" for 127.0.0.1 at 2018-01-15 11:36:31 -0300
+Processing by RecordsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kBxg2uxJROKZiAq+0/EE7qhuPQoZBR9ujWKeSQwmDiNSy8R8p7eMBynaISgA3H5DAXY2qku63ubdRxbEZdC9zQ==", "id"=>"39"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 39]]
+  [1m[35m (120.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records
+Completed 302 Found in 127ms (ActiveRecord: 122.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:36:31 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_menu.html.erb (5.3ms)
+Completed 200 OK in 242ms (Views: 238.5ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/records/38" for 127.0.0.1 at 2018-01-15 11:36:33 -0300
+Processing by RecordsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cORxRI+0/ourIo1jm00OMfbU6RIbWltQD5X01vkM3uyyM9XixEo2bhtwpvVIYHScX8zisknlmthfsHxbkPptAg==", "id"=>"38"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 38], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 38]]
+  [1m[35m (200.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records
+Completed 302 Found in 206ms (ActiveRecord: 201.2ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:36:33 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_menu.html.erb (5.0ms)
+Completed 200 OK in 216ms (Views: 212.7ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/records/37" for 127.0.0.1 at 2018-01-15 11:36:35 -0300
+Processing by RecordsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5Y8BSH+21Fmenb+3F6QHLPoZLQ32f5FSRQeu2jRGehEnWKXuNEgcvC7PlCHEiX2BUwEmraTAUNoVIiZXXbDJ/w==", "id"=>"37"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 37]]
+  [1m[35m (70.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records
+Completed 302 Found in 79ms (ActiveRecord: 73.2ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 11:36:35 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_menu.html.erb (7.0ms)
+Completed 200 OK in 255ms (Views: 250.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 12:03:09 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_menu.html.erb (1.9ms)
+Completed 200 OK in 122ms (Views: 117.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 12:03:10 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (10.4ms)
+  Rendered layouts/_menu.html.erb (6.2ms)
+Completed 200 OK in 239ms (Views: 236.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 12:03:11 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (7.5ms)
+  Rendered records/new.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_menu.html.erb (4.4ms)
+Completed 200 OK in 220ms (Views: 216.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/records" for 127.0.0.1 at 2018-01-15 12:03:16 -0300
+Processing by RecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HWe7oqtELu0TA65OaR3+yd9GfDq2bhBT4eBmutoLM4SymBJmX6owrhAzTxCkXGuH1JF4iRCCZy5s5JIs1muWEA==", "record"=>{"description"=>"1ª Registro Público", "origin"=>"ww", "topic"=>"gg", "part"=>"dd", "datarecord(3i)"=>"15", "datarecord(2i)"=>"1", "datarecord(1i)"=>"2018", "dataprotocol(3i)"=>"15", "dataprotocol(2i)"=>"1", "dataprotocol(1i)"=>"2018"}, "commit"=>"Criar Registro"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "records" ("description", "origin", "topic", "part", "created_at", "updated_at", "datarecord", "dataprotocol") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["description", "1ª Registro Público"], ["origin", "ww"], ["topic", "gg"], ["part", "dd"], ["created_at", "2018-01-15 15:03:16.644174"], ["updated_at", "2018-01-15 15:03:16.644174"], ["datarecord", "2018-01-15"], ["dataprotocol", "2018-01-15"]]
+  [1m[35m (145.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records/40
+Completed 302 Found in 151ms (ActiveRecord: 146.7ms)
+
+
+Started GET "/records/40" for 127.0.0.1 at 2018-01-15 12:03:16 -0300
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"40"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering records/show.html.erb within layouts/application
+  Rendered records/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_menu.html.erb (4.6ms)
+Completed 200 OK in 208ms (Views: 204.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 12:03:18 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_menu.html.erb (4.8ms)
+Completed 200 OK in 225ms (Views: 221.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-15 12:03:57 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (1539.2ms)
+  Rendered layouts/_menu.html.erb (5.3ms)
+Completed 200 OK in 4531ms (Views: 4473.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 12:04:05 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (77.5ms)
+  Rendered records/new.html.erb within layouts/application (78.7ms)
+  Rendered layouts/_menu.html.erb (5.2ms)
+Completed 200 OK in 283ms (Views: 279.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/records" for 127.0.0.1 at 2018-01-15 12:04:09 -0300
+Processing by RecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d+o9b9FirouHKJo/58d0gUG+GMyCUiFtZSuMaHJYCKfYFZSrJYywyIQYe2EqhuHPSmkcfyS+VhDoL3j+fjitMw==", "record"=>{"description"=>"1ª Registro Público", "origin"=>"e3ee", "topic"=>"tt", "part"=>"yuii", "datarecord(3i)"=>"15", "datarecord(2i)"=>"1", "datarecord(1i)"=>"2018", "dataprotocol(3i)"=>"15", "dataprotocol(2i)"=>"1", "dataprotocol(1i)"=>"2018"}, "commit"=>"Criar Registro"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "records" ("description", "origin", "topic", "part", "created_at", "updated_at", "datarecord", "dataprotocol") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["description", "1ª Registro Público"], ["origin", "e3ee"], ["topic", "tt"], ["part", "yuii"], ["created_at", "2018-01-15 15:04:09.514380"], ["updated_at", "2018-01-15 15:04:09.514380"], ["datarecord", "2018-01-15"], ["dataprotocol", "2018-01-15"]]
+  [1m[35m (82.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records/41
+Completed 302 Found in 92ms (ActiveRecord: 84.5ms)
+
+
+Started GET "/records/41" for 127.0.0.1 at 2018-01-15 12:04:09 -0300
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.4ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  Rendering records/show.html.erb within layouts/application
+  Rendered records/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_menu.html.erb (4.8ms)
+Completed 200 OK in 272ms (Views: 232.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 12:04:11 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_menu.html.erb (5.4ms)
+Completed 200 OK in 227ms (Views: 223.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 12:06:25 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_menu.html.erb (2.5ms)
+Completed 200 OK in 86ms (Views: 82.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 12:06:25 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_menu.html.erb (4.7ms)
+Completed 200 OK in 228ms (Views: 223.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 12:06:26 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (61.5ms)
+  Rendered records/new.html.erb within layouts/application (63.0ms)
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `strtime' for :dataprotocol:Symbol):
+    40: 
+    41:   <div class="field">
+    42:     <%= form.label :dataprotocol %>
+    43:     <%= form.date_select :dataprotocol.strtime("Printed on %m/%d/%Y")%>
+    44:   </div>
+    45: 
+    46: 
+  
+app/views/records/_form.html.erb:43:in `block in _app_views_records__form_html_erb__3000242968866380997_70093111163220'
+app/views/records/_form.html.erb:1:in `_app_views_records__form_html_erb__3000242968866380997_70093111163220'
+app/views/records/new.html.erb:3:in `_app_views_records_new_html_erb__3248134210901855769_70093111752340'
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 12:07:16 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (8.4ms)
+  Rendered records/new.html.erb within layouts/application (10.2ms)
+  Rendered layouts/_menu.html.erb (2.4ms)
+Completed 200 OK in 92ms (Views: 89.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 12:14:55 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (14.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (4.6ms)
+  Rendered records/new.html.erb within layouts/application (30.7ms)
+Started GET "/records" for 127.0.0.1 at 2018-01-15 12:14:56 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (54.4ms)
+  Rendered layouts/_menu.html.erb (29.0ms)
+Completed 200 OK in 965ms (Views: 920.7ms | ActiveRecord: 14.5ms)
+
+
+  Rendered layouts/_menu.html.erb (4.9ms)
+Completed 200 OK in 442ms (Views: 336.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 12:14:58 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_menu.html.erb (1.6ms)
+Completed 200 OK in 156ms (Views: 153.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 13:46:21 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_menu.html.erb (1.9ms)
+Completed 200 OK in 198ms (Views: 194.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 13:46:25 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_menu.html.erb (6.0ms)
+Completed 200 OK in 215ms (Views: 210.8ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/records/41" for 127.0.0.1 at 2018-01-15 13:46:29 -0300
+Processing by RecordsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tfJCJX1dL8ngrj6aB+7jNnD5hsOyJgY0QzKPf4MRx1Z3JeaDNqPnLFD8FQzUw5mb2eGNY+CZx7wTFwfy6ud0uA==", "id"=>"41"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (159.1ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 41]]
+  [1m[35m (155.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records
+Completed 302 Found in 594ms (ActiveRecord: 314.7ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 13:46:29 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_menu.html.erb (6.4ms)
+Completed 200 OK in 228ms (Views: 223.7ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/records/40" for 127.0.0.1 at 2018-01-15 13:46:31 -0300
+Processing by RecordsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4O5awnzQRRYCy3J40taGyjq0uK2Mhmn+K1ISqpZ4QN8iOf5kNy6N87KZWe4B+/xnk6yzDd45qHZ7d5on/47zMQ==", "id"=>"40"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 40]]
+  [1m[35m (137.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records
+Completed 302 Found in 143ms (ActiveRecord: 138.9ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 13:46:31 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_menu.html.erb (5.7ms)
+Completed 200 OK in 219ms (Views: 216.5ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/records/29" for 127.0.0.1 at 2018-01-15 13:46:33 -0300
+Processing by RecordsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Gj6nodwE8mp3MMexKNXIzYaDuAMyUA/1IJmcaJo9MyvY6QMHl/o6j8di7Cf7+LJgL5uzo2Dvzn1wvBTl88uAxQ==", "id"=>"29"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 29]]
+  [1m[35m (91.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records
+Completed 302 Found in 98ms (ActiveRecord: 93.0ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 13:46:33 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (45.3ms)
+  Rendered layouts/_menu.html.erb (6.5ms)
+Completed 200 OK in 270ms (Views: 266.2ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/records/28" for 127.0.0.1 at 2018-01-15 13:46:35 -0300
+Processing by RecordsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MBxlfPvq0UNPLOhox0T5aZ4Niko98v/+GJHsRI8/Raryy8HasBQZpv9+w/4UaYPENxWB6m9NPnZItGTJ5sn2RA==", "id"=>"28"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 28]]
+  [1m[35m (214.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records
+Completed 302 Found in 219ms (ActiveRecord: 216.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 13:46:36 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_menu.html.erb (5.7ms)
+Completed 200 OK in 228ms (Views: 225.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 13:46:37 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (5.5ms)
+  Rendered records/new.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_menu.html.erb (5.9ms)
+Completed 200 OK in 226ms (Views: 222.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/records" for 127.0.0.1 at 2018-01-15 13:46:45 -0300
+Processing by RecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SgYLXFo56I9HbWAqmHuaReyulnPYbEJAk3OEzIIL3nTl+aKYrtf2zERdgXRVOg8L53mSwH6ANT0ed3Bajmt74A==", "record"=>{"description"=>"1ª Registro Público", "origin"=>"se", "topic"=>"dsrf", "part"=>"dfd", "datarecord(3i)"=>"15", "datarecord(2i)"=>"1", "datarecord(1i)"=>"2018", "dataprotocol(3i)"=>"15", "dataprotocol(2i)"=>"1", "dataprotocol(1i)"=>"2018"}, "commit"=>"Criar Registro"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (68.3ms)[0m  [1m[32mINSERT INTO "records" ("description", "origin", "topic", "part", "created_at", "updated_at", "datarecord", "dataprotocol") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["description", "1ª Registro Público"], ["origin", "se"], ["topic", "dsrf"], ["part", "dfd"], ["created_at", "2018-01-15 16:46:45.595308"], ["updated_at", "2018-01-15 16:46:45.595308"], ["datarecord", "2018-01-15"], ["dataprotocol", "2018-01-15"]]
+  [1m[35m (292.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records/42
+Completed 302 Found in 444ms (ActiveRecord: 360.9ms)
+
+
+Started GET "/records/42" for 127.0.0.1 at 2018-01-15 13:46:45 -0300
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"42"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendering records/show.html.erb within layouts/application
+  Rendered records/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_menu.html.erb (4.5ms)
+Completed 200 OK in 250ms (Views: 223.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 13:46:47 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_menu.html.erb (6.6ms)
+Completed 200 OK in 212ms (Views: 208.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 13:47:15 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_menu.html.erb (2.1ms)
+Completed 200 OK in 84ms (Views: 80.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 13:47:17 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_menu.html.erb (6.3ms)
+Completed 200 OK in 233ms (Views: 229.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 13:47:19 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_menu.html.erb (6.4ms)
+Completed 200 OK in 234ms (Views: 230.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 13:47:20 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (5.7ms)
+  Rendered records/new.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_menu.html.erb (5.1ms)
+Completed 200 OK in 215ms (Views: 212.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/records" for 127.0.0.1 at 2018-01-15 13:47:24 -0300
+Processing by RecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vjQl315vl4zu3EJPxd1mJu0rvCVlQvhz3Sxgq5igKrYRy4wbqoGJz+3soxEInPNo5vy4lsOujw5QKJQ9lMCPIg==", "record"=>{"description"=>"1ª Registro Público", "origin"=>"dsdf", "topic"=>"fff", "part"=>"fff", "datarecord(3i)"=>"15", "datarecord(2i)"=>"1", "datarecord(1i)"=>"2018", "default(3i)"=>"15", "default(2i)"=>"1", "default(1i)"=>"2018"}, "commit"=>"Criar Registro"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: :default(3i), :default(2i), :default(1i)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (6.3ms)
+  Rendered records/new.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_menu.html.erb (4.0ms)
+Completed 200 OK in 178ms (Views: 174.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/records" for 127.0.0.1 at 2018-01-15 13:47:27 -0300
+Processing by RecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tTUL7eTYmcfsZ7WVCBDpA+mBzBW2EDo9YhljXMyYyER34q9LryZRIlw1ngPbPZOuQJnHteSv+7UyPOvRpW57qg==", "record"=>{"description"=>"1ª Registro Público", "origin"=>"dsdf", "topic"=>"fff", "part"=>"fff", "datarecord(3i)"=>"15", "datarecord(2i)"=>"1", "datarecord(1i)"=>"2018", "default(3i)"=>"15", "default(2i)"=>"1", "default(1i)"=>"2018"}, "commit"=>"Criar Registro"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: :default(3i), :default(2i), :default(1i)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (5.3ms)
+  Rendered records/new.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_menu.html.erb (5.1ms)
+Completed 200 OK in 193ms (Views: 189.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/records" for 127.0.0.1 at 2018-01-15 13:47:32 -0300
+Processing by RecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ogXU9rZCT9ftC+c3LbiOpyqxSbGxOHfEeZuDdsBbFVlg0nBQ/byHMl1ZzKH+lfQKg6lCEeOHtkwpvgv7qa2mtw==", "record"=>{"description"=>"1ª Registro Público", "origin"=>"dsdf", "topic"=>"fff", "part"=>"fff", "datarecord(3i)"=>"15", "datarecord(2i)"=>"1", "datarecord(1i)"=>"2018", "default(3i)"=>"16", "default(2i)"=>"1", "default(1i)"=>"2018"}, "commit"=>"Criar Registro"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: :default(3i), :default(2i), :default(1i)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (4.8ms)
+  Rendered records/new.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_menu.html.erb (5.2ms)
+Completed 200 OK in 217ms (Views: 213.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 13:47:47 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_menu.html.erb (2.7ms)
+Completed 200 OK in 95ms (Views: 92.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 13:47:48 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (26.7ms)
+  Rendered records/new.html.erb within layouts/application (28.2ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `merge' for :default:Symbol):
+    40: 
+    41:   <div class="field">
+    42:     <%= form.label :dataprotocol %>
+    43:     <%= form.date_select :dataprotocol, :default, id: :record_dataprotocol%>
+    44:   </div>
+    45: 
+    46: 
+  
+app/views/records/_form.html.erb:43:in `block in _app_views_records__form_html_erb__3000242968866380997_70093264987420'
+app/views/records/_form.html.erb:1:in `_app_views_records__form_html_erb__3000242968866380997_70093264987420'
+app/views/records/new.html.erb:3:in `_app_views_records_new_html_erb__3248134210901855769_70093265061960'
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 13:47:57 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (8.8ms)
+  Rendered records/new.html.erb within layouts/application (9.9ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `merge' for :default:Symbol):
+    40: 
+    41:   <div class="field">
+    42:     <%= form.label :dataprotocol %>
+    43:     <%= form.date_select :dataprotocol, :default%>
+    44:   </div>
+    45: 
+    46: 
+  
+app/views/records/_form.html.erb:43:in `block in _app_views_records__form_html_erb__3000242968866380997_70093162132900'
+app/views/records/_form.html.erb:1:in `_app_views_records__form_html_erb__3000242968866380997_70093162132900'
+app/views/records/new.html.erb:3:in `_app_views_records_new_html_erb__3248134210901855769_70093162215240'
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 13:51:39 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (11.9ms)
+  Rendered records/new.html.erb within layouts/application (13.2ms)
+  Rendered layouts/_menu.html.erb (1.6ms)
+Completed 200 OK in 166ms (Views: 94.6ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/records" for 127.0.0.1 at 2018-01-15 13:51:45 -0300
+Processing by RecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nXUjm+NUDqGYwI8KUfZijYONWBY8TySGJgR8D1beDglfooc9qKrGRCiSpJyC2xggKpVTtm7w5Q52IfSCPyi95w==", "record"=>{"description"=>"1ª Registro Público", "origin"=>"fdef", "topic"=>"fefe", "part"=>"efef", "datarecord(3i)"=>"15", "datarecord(2i)"=>"1", "datarecord(1i)"=>"2018", "dataprotocol(3i)"=>"15", "dataprotocol(2i)"=>"1", "dataprotocol(1i)"=>"2018"}, "commit"=>"Criar Registro"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `default' for #<Record:0x007f7fb83b4a18>):
+  
+app/controllers/records_controller.rb:31:in `block in create'
+app/controllers/records_controller.rb:30:in `create'
+Started POST "/records" for 127.0.0.1 at 2018-01-15 13:52:16 -0300
+Processing by RecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nXUjm+NUDqGYwI8KUfZijYONWBY8TySGJgR8D1beDglfooc9qKrGRCiSpJyC2xggKpVTtm7w5Q52IfSCPyi95w==", "record"=>{"description"=>"1ª Registro Público", "origin"=>"fdef", "topic"=>"fefe", "part"=>"efef", "datarecord(3i)"=>"15", "datarecord(2i)"=>"1", "datarecord(1i)"=>"2018", "dataprotocol(3i)"=>"15", "dataprotocol(2i)"=>"1", "dataprotocol(1i)"=>"2018"}, "commit"=>"Criar Registro"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "records" ("description", "origin", "topic", "part", "created_at", "updated_at", "datarecord", "dataprotocol") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["description", "1ª Registro Público"], ["origin", "fdef"], ["topic", "fefe"], ["part", "efef"], ["created_at", "2018-01-15 16:52:16.920925"], ["updated_at", "2018-01-15 16:52:16.920925"], ["datarecord", "2018-01-15"], ["dataprotocol", "2018-01-15"]]
+  [1m[35m (90.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records/43
+Completed 302 Found in 133ms (ActiveRecord: 93.5ms)
+
+
+Started GET "/records/43" for 127.0.0.1 at 2018-01-15 13:52:17 -0300
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"43"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  Rendering records/show.html.erb within layouts/application
+  Rendered records/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_menu.html.erb (1.7ms)
+Completed 200 OK in 64ms (Views: 60.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 13:52:19 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_menu.html.erb (2.7ms)
+Completed 200 OK in 85ms (Views: 82.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 13:57:50 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_menu.html.erb (2.3ms)
+Completed 200 OK in 93ms (Views: 89.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 13:57:51 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_menu.html.erb (5.1ms)
+Completed 200 OK in 211ms (Views: 207.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 13:57:52 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_menu.html.erb (5.8ms)
+Completed 200 OK in 227ms (Views: 223.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 13:57:53 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (6.5ms)
+  Rendered records/new.html.erb within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `strftime' for :dataprotocol:Symbol):
+    40: 
+    41:   <div class="field">
+    42:     <%= form.label :dataprotocol %>
+    43:     <%= form.date_select :dataprotocol.strftime("%d, %m, %Y"), id: :record_dataprotocol%>
+    44:   </div>
+    45: 
+    46: 
+  
+app/views/records/_form.html.erb:43:in `block in _app_views_records__form_html_erb__3000242968866380997_70093198168600'
+app/views/records/_form.html.erb:1:in `_app_views_records__form_html_erb__3000242968866380997_70093198168600'
+app/views/records/new.html.erb:3:in `_app_views_records_new_html_erb__3248134210901855769_70093198273360'
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 13:58:04 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (4.3ms)
+  Rendered records/new.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_menu.html.erb (1.5ms)
+Completed 200 OK in 80ms (Views: 77.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 13:59:17 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (8.3ms)
+  Rendered records/new.html.erb within layouts/application (10.1ms)
+  Rendered layouts/_menu.html.erb (2.7ms)
+Completed 200 OK in 87ms (Views: 84.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 13:59:18 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (5.3ms)
+  Rendered records/new.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_menu.html.erb (5.6ms)
+Completed 200 OK in 253ms (Views: 249.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 13:59:19 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_menu.html.erb (5.7ms)
+Completed 200 OK in 195ms (Views: 192.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 13:59:25 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (4.9ms)
+  Rendered records/new.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_menu.html.erb (6.0ms)
+Completed 200 OK in 227ms (Views: 224.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 13:59:47 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (808.8ms)
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 13:59:49 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (40.6ms)
+  Rendered records/new.html.erb within layouts/application (41.8ms)
+  Rendered layouts/_menu.html.erb (3.4ms)
+  Rendered layouts/_menu.html.erb (5.0ms)
+Completed 200 OK in 561ms (Views: 557.4ms | ActiveRecord: 0.5ms)
+
+
+Completed 200 OK in 3068ms (Views: 3026.4ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/records" for 127.0.0.1 at 2018-01-15 13:59:55 -0300
+Processing by RecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5VvQ7+p1oPXEoT/UNklhbynnDeygRCWh1WiVSTzqC0BKpHkrHpu+tseR3or7CPQhIjAJXwaoUtxYbGHfMIqu1A==", "record"=>{"description"=>"1ª Registro Público", "origin"=>"hh", "topic"=>"jkj", "part"=>"bvgh", "datarecord(3i)"=>"15", "datarecord(2i)"=>"1", "datarecord(1i)"=>"2018", "dataprotocol(3i)"=>"15", "dataprotocol(2i)"=>"1", "dataprotocol(1i)"=>"2018"}, "commit"=>"Criar Registro"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO "records" ("description", "origin", "topic", "part", "created_at", "updated_at", "datarecord", "dataprotocol") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["description", "1ª Registro Público"], ["origin", "hh"], ["topic", "jkj"], ["part", "bvgh"], ["created_at", "2018-01-15 16:59:55.995139"], ["updated_at", "2018-01-15 16:59:55.995139"], ["datarecord", "2018-01-15"], ["dataprotocol", "2018-01-15"]]
+  [1m[35m (108.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records/44
+Completed 302 Found in 115ms (ActiveRecord: 110.1ms)
+
+
+Started GET "/records/44" for 127.0.0.1 at 2018-01-15 13:59:56 -0300
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering records/show.html.erb within layouts/application
+  Rendered records/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_menu.html.erb (5.7ms)
+Completed 200 OK in 161ms (Views: 128.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 13:59:59 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_menu.html.erb (4.5ms)
+Completed 200 OK in 254ms (Views: 250.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 14:00:32 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_menu.html.erb (2.0ms)
+Completed 200 OK in 73ms (Views: 70.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 14:00:33 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_menu.html.erb (5.2ms)
+Completed 200 OK in 225ms (Views: 221.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 14:00:43 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (616.2ms)
+  Rendered layouts/_menu.html.erb (4.5ms)
+Completed 200 OK in 1014ms (Views: 983.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 14:00:46 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_menu.html.erb (2.6ms)
+Completed 200 OK in 236ms (Views: 232.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 14:00:48 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (17.5ms)
+  Rendered records/new.html.erb within layouts/application (18.7ms)
+  Rendered layouts/_menu.html.erb (5.3ms)
+Completed 200 OK in 221ms (Views: 217.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/records" for 127.0.0.1 at 2018-01-15 14:00:52 -0300
+Processing by RecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fvIiNAI2wC5pFK+nL9k3LJridrk9CTGwN7SQw+VfTEvRDYvw9tjebWokTvnimKJikTVyCpvlRs26sGRV6T/p3w==", "record"=>{"description"=>"1ª Registro Público", "origin"=>"h6yh", "topic"=>"7yjk7ukuk", "part"=>"", "datarecord(3i)"=>"15", "datarecord(2i)"=>"1", "datarecord(1i)"=>"2018", "dataprotocol(3i)"=>"15", "dataprotocol(2i)"=>"1", "dataprotocol(1i)"=>"2018"}, "commit"=>"Criar Registro"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (4.5ms)
+  Rendered records/new.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_menu.html.erb (4.7ms)
+Completed 200 OK in 201ms (Views: 196.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/records" for 127.0.0.1 at 2018-01-15 14:00:56 -0300
+Processing by RecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rIXw4UoPTn7ptKxGagCvJW8utWtMpBneLPLyISuwAWhuUlRHAfGGm1nmh9C5LdWIxja+yx4b2FZ813qsQkayhg==", "record"=>{"description"=>"1ª Registro Público", "origin"=>"h6yh", "topic"=>"7yjk7ukuk", "part"=>"kikuju", "datarecord(3i)"=>"15", "datarecord(2i)"=>"1", "datarecord(1i)"=>"2018", "dataprotocol(3i)"=>"15", "dataprotocol(2i)"=>"1", "dataprotocol(1i)"=>"2018"}, "commit"=>"Criar Registro"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "records" ("description", "origin", "topic", "part", "created_at", "updated_at", "datarecord", "dataprotocol") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["description", "1ª Registro Público"], ["origin", "h6yh"], ["topic", "7yjk7ukuk"], ["part", "kikuju"], ["created_at", "2018-01-15 17:00:56.444286"], ["updated_at", "2018-01-15 17:00:56.444286"], ["datarecord", "2018-01-15"], ["dataprotocol", "2018-01-15"]]
+  [1m[35m (144.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records/45
+Completed 302 Found in 152ms (ActiveRecord: 146.5ms)
+
+
+Started GET "/records/45" for 127.0.0.1 at 2018-01-15 14:00:56 -0300
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  Rendering records/show.html.erb within layouts/application
+  Rendered records/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_menu.html.erb (4.5ms)
+Completed 200 OK in 258ms (Views: 252.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 14:00:58 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_menu.html.erb (5.5ms)
+Completed 200 OK in 212ms (Views: 209.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 14:01:18 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_menu.html.erb (1.7ms)
+Completed 200 OK in 61ms (Views: 58.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 14:01:23 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (5.2ms)
+  Rendered records/new.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_menu.html.erb (1.6ms)
+Completed 200 OK in 88ms (Views: 84.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/records" for 127.0.0.1 at 2018-01-15 14:01:28 -0300
+Processing by RecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zOHVnLe5CS+cGUVWYl3NjRzOqL2T3hDXekJJnKTWy6hjHnxYQ1cXbJ8ppAivHFjDFxmsDjUyZ6r3Rr0KqLZuPA==", "record"=>{"description"=>"1ª Registro Público", "origin"=>"gfgg", "topic"=>"yyy", "part"=>"yyyyyy", "datarecord(3i)"=>"15", "datarecord(2i)"=>"1", "datarecord(1i)"=>"2018", "dataprotocol(3i)"=>"15", "dataprotocol(2i)"=>"1", "dataprotocol(1i)"=>"2018"}, "commit"=>"Criar Registro"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "records" ("description", "origin", "topic", "part", "created_at", "updated_at", "datarecord", "dataprotocol") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["description", "1ª Registro Público"], ["origin", "gfgg"], ["topic", "yyy"], ["part", "yyyyyy"], ["created_at", "2018-01-15 17:01:28.273850"], ["updated_at", "2018-01-15 17:01:28.273850"], ["datarecord", "2018-01-15"], ["dataprotocol", "2018-01-15"]]
+  [1m[35m (246.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records/46
+Completed 302 Found in 253ms (ActiveRecord: 248.5ms)
+
+
+Started GET "/records/46" for 127.0.0.1 at 2018-01-15 14:01:28 -0300
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"46"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 46], ["LIMIT", 1]]
+  Rendering records/show.html.erb within layouts/application
+  Rendered records/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_menu.html.erb (3.7ms)
+Completed 200 OK in 213ms (Views: 209.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 14:01:30 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_menu.html.erb (4.8ms)
+Completed 200 OK in 230ms (Views: 225.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-15 14:01:45 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (585.1ms)
+  Rendered layouts/_menu.html.erb (4.7ms)
+Completed 200 OK in 1125ms (Views: 1094.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 14:01:53 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (13.4ms)
+  Rendered records/new.html.erb within layouts/application (14.6ms)
+  Rendered layouts/_menu.html.erb (4.1ms)
+Completed 200 OK in 235ms (Views: 232.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-15 14:01:58 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_menu.html.erb (6.0ms)
+Completed 200 OK in 201ms (Views: 198.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 14:02:04 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (5.8ms)
+  Rendered records/new.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_menu.html.erb (5.9ms)
+Completed 200 OK in 201ms (Views: 199.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/records" for 127.0.0.1 at 2018-01-15 14:02:13 -0300
+Processing by RecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZmiRocfgRtjRcys+LKWHNk13LEVgf1E7PxTPtydZmeHJlzhlMw5Ym9JDymDh5BJ4RqAo9saTJkayEDshKzk8dQ==", "record"=>{"description"=>"1ª Registro Público", "origin"=>"ertt", "topic"=>"jj7j7", "part"=>"7j7j7j7j", "datarecord(3i)"=>"15", "datarecord(2i)"=>"1", "datarecord(1i)"=>"2018", "dataprotocol(3i)"=>"19", "dataprotocol(2i)"=>"1", "dataprotocol(1i)"=>"2018"}, "commit"=>"Criar Registro"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "records" ("description", "origin", "topic", "part", "created_at", "updated_at", "datarecord", "dataprotocol") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["description", "1ª Registro Público"], ["origin", "ertt"], ["topic", "jj7j7"], ["part", "7j7j7j7j"], ["created_at", "2018-01-15 17:02:13.486418"], ["updated_at", "2018-01-15 17:02:13.486418"], ["datarecord", "2018-01-15"], ["dataprotocol", "2018-01-19"]]
+  [1m[35m (175.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records/47
+Completed 302 Found in 183ms (ActiveRecord: 176.4ms)
+
+
+Started GET "/records/47" for 127.0.0.1 at 2018-01-15 14:02:13 -0300
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"47"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 47], ["LIMIT", 1]]
+  Rendering records/show.html.erb within layouts/application
+  Rendered records/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_menu.html.erb (5.3ms)
+Completed 200 OK in 233ms (Views: 227.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 14:02:22 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_menu.html.erb (6.4ms)
+Completed 200 OK in 219ms (Views: 216.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 14:02:50 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (4.6ms)
+  Rendered records/new.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_menu.html.erb (1.2ms)
+Completed 200 OK in 69ms (Views: 67.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 14:02:53 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (6.3ms)
+  Rendered records/new.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_menu.html.erb (7.0ms)
+Completed 200 OK in 254ms (Views: 250.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-15 14:03:09 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (574.1ms)
+  Rendered layouts/_menu.html.erb (3.5ms)
+Completed 200 OK in 1111ms (Views: 1084.4ms | ActiveRecord: 1.6ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-01-15 14:03:14 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"09XvTxO//PSHPtCp6K4CLJMbLc1jcI8ciREqfl7wy2IRAkvpWEE0ETds+z87g3iBOgMmbTHPTpTZNKLzNwZ4jA=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 63ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-15 14:03:14 -0300
+Processing by RecordsController#index as HTML
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-01-15 14:03:14 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (90.2ms)
+  Rendered layouts/_menu.html.erb (0.8ms)
+Completed 200 OK in 344ms (Views: 325.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-01-15 14:03:23 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZLPclxs0swAJROiFg7whVgrqUS7MEaBEiMPzNyJLhihcbRdfOjUTAgL+KQE4Sw1X4EVkuXqEcfNisbOYwrDZzQ==", "user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-01-15 17:03:23.604953"], ["last_sign_in_at", "2018-01-15 12:36:09.725446"], ["sign_in_count", 47], ["updated_at", "2018-01-15 17:03:23.605640"], ["id", 1]]
+  [1m[35m (95.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 711ms (ActiveRecord: 97.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-15 14:03:23 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_menu.html.erb (1.9ms)
+Completed 200 OK in 235ms (Views: 231.3ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/records/47" for 127.0.0.1 at 2018-01-15 14:03:36 -0300
+Processing by RecordsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"XA2M40ZchQNeZfuoeaG/Q61z1l/blfPLrqfCYcZY4I6NGJK6Szfx3pPvs1DvQ+YvQoi3Fv1TjO+dv/tI6MHSwQ==", "id"=>"47"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 47], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 47]]
+  [1m[35m (252.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records
+Completed 302 Found in 265ms (ActiveRecord: 254.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 14:03:37 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_menu.html.erb (4.5ms)
+Completed 200 OK in 235ms (Views: 229.9ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/records/46" for 127.0.0.1 at 2018-01-15 14:03:39 -0300
+Processing by RecordsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VZMGskzbW8rHNE1PWKcgjAMLfTAvkbu8Ww1t2WIOEzWEhhjrQbAvFwq+BbfORXng7PAceQlXxJhoFVTwTJcheg==", "id"=>"46"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 46], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 46]]
+  [1m[35m (112.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records
+Completed 302 Found in 118ms (ActiveRecord: 113.7ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 14:03:39 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_menu.html.erb (5.7ms)
+Completed 200 OK in 250ms (Views: 247.4ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/records/45" for 127.0.0.1 at 2018-01-15 14:03:40 -0300
+Processing by RecordsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ToROzJMBeQTgiVkgO9crOG9A4gzHoCLo4ayI8hH5Bm+fkVCVnmoN2S0DEditNXJUgLuDReFmXczStLHbP2A0IA==", "id"=>"45"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 45]]
+  [1m[35m (151.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records
+Completed 302 Found in 157ms (ActiveRecord: 153.1ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 14:03:41 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_menu.html.erb (4.4ms)
+Completed 200 OK in 209ms (Views: 205.8ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/records/44" for 127.0.0.1 at 2018-01-15 14:03:42 -0300
+Processing by RecordsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ttpmage2qEBMsWwD1T89wWCmhnc474G8sgnELAWKaaxnz3gzCt3cnYE7JPtD3WStj13nPh4p/piBEf0FKxNb4w==", "id"=>"44"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 44]]
+  [1m[35m (155.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records
+Completed 302 Found in 162ms (ActiveRecord: 156.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 14:03:42 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_menu.html.erb (4.6ms)
+Completed 200 OK in 210ms (Views: 206.0ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/records/43" for 127.0.0.1 at 2018-01-15 14:03:44 -0300
+Processing by RecordsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ZK6iircFRlH/zZwd8IsmxuaAOpE3xDVzCsh3QNRr+j+1u7zTum4yjDJH1OVmaX+qCXtb2BECSlc50E5p+vLIcA==", "id"=>"43"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 43]]
+  [1m[35m (182.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records
+Completed 302 Found in 188ms (ActiveRecord: 184.0ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 14:03:44 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.4ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_menu.html.erb (4.8ms)
+Completed 200 OK in 229ms (Views: 225.8ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/records/42" for 127.0.0.1 at 2018-01-15 14:03:46 -0300
+Processing by RecordsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"dp4IJBLHi1PsW81F3hQtRXWXkpWE8Ft5EC7Fa8cIQaKnixZ9H6z/jiHRhb1I9nQpmmzz3KI2JF0jNvxC6ZFz7Q==", "id"=>"42"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT  "records".* FROM "records" WHERE "records"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = ?[0m  [["id", 42]]
+  [1m[35m (133.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/records
+Completed 302 Found in 139ms (ActiveRecord: 135.4ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 14:03:46 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_menu.html.erb (4.6ms)
+Completed 200 OK in 236ms (Views: 233.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 14:04:09 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_menu.html.erb (2.4ms)
+Completed 200 OK in 95ms (Views: 92.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 14:04:10 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_menu.html.erb (4.4ms)
+Completed 200 OK in 222ms (Views: 217.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 14:04:10 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_menu.html.erb (4.0ms)
+Completed 200 OK in 235ms (Views: 232.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 14:04:11 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_menu.html.erb (2.7ms)
+Completed 200 OK in 71ms (Views: 69.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 14:04:12 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_menu.html.erb (5.6ms)
+Completed 200 OK in 171ms (Views: 168.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-01-15 14:04:13 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_menu.html.erb (5.0ms)
+Completed 200 OK in 210ms (Views: 207.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-01-15 14:04:14 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (9.6ms)
+  Rendered records/new.html.erb within layouts/application (10.8ms)
+  Rendered layouts/_menu.html.erb (5.8ms)
+Completed 200 OK in 226ms (Views: 224.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-15 14:04:23 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (612.3ms)
+  Rendered layouts/_menu.html.erb (5.6ms)
+Completed 200 OK in 1160ms (Views: 1132.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-15 14:04:46 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (600.8ms)
+  Rendered layouts/_menu.html.erb (4.2ms)
+Completed 200 OK in 983ms (Views: 954.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-15 14:05:49 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_menu.html.erb (1.6ms)
+Completed 200 OK in 72ms (Views: 69.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-15 14:07:52 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (531.3ms)
+  Rendered layouts/_menu.html.erb (6.1ms)
+Completed 200 OK in 1030ms (Views: 994.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-15 14:07:58 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_menu.html.erb (1.7ms)
+Completed 200 OK in 196ms (Views: 192.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-15 14:08:09 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (593.4ms)
+  Rendered layouts/_menu.html.erb (4.1ms)
+Completed 200 OK in 1010ms (Views: 976.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-15 14:08:37 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (585.8ms)
+  Rendered layouts/_menu.html.erb (5.8ms)
+Completed 200 OK in 1070ms (Views: 1027.9ms | ActiveRecord: 1.6ms)
+
+
