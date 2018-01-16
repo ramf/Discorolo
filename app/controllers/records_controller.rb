@@ -5,6 +5,7 @@ class RecordsController < ApplicationController
   # GET /records.json
   def index
     @records = Record.all
+
   end
 
   # GET /records/1
@@ -16,6 +17,9 @@ class RecordsController < ApplicationController
   def new
     @record = Record.new
     @registro = Record.new
+    @user = User.new
+    authorize @user
+
   end
 
   # GET /records/1/edit
@@ -70,6 +74,6 @@ class RecordsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def record_params
-      params.require(:record).permit(:description, :origin, :topic, :part, :datarecord, :dataprotocol, :registro)
+      params.require(:record).permit(:description, :origin, :topic, :part, :datarecord, :dataprotocol, :registro, :name)
     end
 end
