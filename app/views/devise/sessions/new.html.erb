@@ -15,16 +15,17 @@
 
       <div class="panel-body">
     <%= form_for(resource, as: resource_name, url: session_path(resource_name), class: "form-horizontal") do |f| %>
+    <%= devise_error_messages! %>
 
 
     <div class="field">
-      <%= f.label :email %>
-      <%= f.email_field :email, autofocus: true, class: "form-control", placeholder:"e-mail"  %>
+      <%= f.label :Matricula %>
+      <%= f.email_field :email, autofocus: true, class: "form-control", placeholder:"Matricula@tjce.jus.br"  %>
     </div>
 
     <div class="field">
       <%= f.label :password %>
-      <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder:"senha" %>
+      <%= f.password_field :password, autocomplete: "on", class: "form-control", placeholder:"senha" %>
     </div>
 
       <div class="form-group">

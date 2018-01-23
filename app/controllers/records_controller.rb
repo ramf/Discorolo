@@ -24,6 +24,10 @@ class RecordsController < ApplicationController
 
   # GET /records/1/edit
   def edit
+    @record = Record.new
+    @registro = Record.new
+    @user = User.new
+    authorize @user
   end
 
   # POST /records
@@ -59,10 +63,15 @@ class RecordsController < ApplicationController
   # DELETE /records/1
   # DELETE /records/1.json
   def destroy
+
+    @user = User.new
+    authorize @user
     @record.destroy
     respond_to do |format|
       format.html { redirect_to records_url, notice: 'Record was successfully destroyed.' }
       format.json { head :no_content }
+
+
     end
   end
 

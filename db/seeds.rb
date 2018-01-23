@@ -7,14 +7,24 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 #User.create(email: "admin@example.com", password: '123456')
 
-User.create(name: "Rômulo",
-            email: "admin@example.com",
+
+# ROLE = 0 admin
+# ROLE = 1 Usuário
+
+User.create(name: "Romênia Irlandia Soares Dutra",
+            email: "8776@tjce.jus.br",
             password: '123456',
             role: 0
 )
 
-User.create(name: "João",
-            email: "admin1@example.com",
+User.create(name: "Marcia Maria Freitas de Queiroz",
+            email: "287@tjce.jus.br",
+            password: '123456',
+            role: 0
+)
+
+User.create(name: "João Alfredo Pinto Moreira",
+            email: "05598766370@tjce.jus.br",
             password: '123456',
             role: 1
 )

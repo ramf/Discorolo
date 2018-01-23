@@ -9,10 +9,11 @@
 
         <ul class="nav navbar-nav">
           <li><%= link_to fa_icon("pencil-square", text: "Registros Salvos"), records_path %></li>
+          <li><%= link_to fa_icon("user-circle", text: "Cadastrar Usuários"), admins_index_path %></li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><%= current_user.email %></a></li>
+          <li><a href="#"><%= current_user.name %></a></li>
           <li><%= link_to fa_icon("sign-out", text: "Sair"), destroy_user_session_path, method: :delete %></li>
 
         </ul>
