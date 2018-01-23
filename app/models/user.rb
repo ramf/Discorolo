@@ -12,6 +12,6 @@ class User < ApplicationRecord
   scope :with_restricted_access, -> { where(role: ROLES[:restricted_access]) }
 
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
+         :recoverable, :rememberable, :trackable
 
 end

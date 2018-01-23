@@ -12,19 +12,19 @@
 # ROLE = 1 Usuário
 
 User.create(name: "Romênia Irlandia Soares Dutra",
-            email: "8776@tjce.jus.br",
+            email: "8776",
             password: '123456',
             role: 0
 )
 
 User.create(name: "Marcia Maria Freitas de Queiroz",
-            email: "287@tjce.jus.br",
+            email: "287",
             password: '123456',
             role: 0
 )
 
 User.create(name: "João Alfredo Pinto Moreira",
-            email: "05598766370@tjce.jus.br",
+            email: "05598766370",
             password: '123456',
             role: 1
 )
