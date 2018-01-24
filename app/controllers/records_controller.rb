@@ -24,8 +24,6 @@ class RecordsController < ApplicationController
 
   # GET /records/1/edit
   def edit
-    @record = Record.new
-    @registro = Record.new
     @user = User.new
     authorize @user
   end

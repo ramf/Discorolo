@@ -9,7 +9,7 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>Descrição</th>
+      <th>Distribuição</th>
       <th>Origem</th>
       <th>Tópico</th>
       <th>Parte</th>
@@ -29,7 +29,8 @@
         <td><%= record.part %></td>
         <td><%= record.dataprotocol %></td>
         <td><%= record.datarecord %></td>
-        <!-- <td><%= link_to 'Mostrar', record %></td> -->
+
+
 
         <td><%= link_to fa_icon("pencil-square-o", title: "Editar"), edit_record_path(record), class: "btn btn-info" %></td>
         <td><%= link_to fa_icon("trash-o", title: "Excluir"), record, method: :delete, data: { confirm: 'Você tem certeza?' }, class: "btn btn-danger" %></td>

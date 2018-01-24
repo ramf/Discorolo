@@ -10,7 +10,7 @@ pt-BR:
       user: "Usuário"
     attributes:
       record:
-        description: "Descrição"
+        description: "Distribuição"
         datarecord: "Data do Registro"
         dataprotocol: "Data do Protocolo"
         origin: "Origem"
