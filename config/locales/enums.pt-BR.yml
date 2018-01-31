@@ -1,6 +1,8 @@
-'pt_BR':
+pt-BR:
   enums:
     user:
       role:
-        full_access: Acesso Completo
-        restricted_access: Acesso Restrito
+        admin: "Administrador"
+        user: "Usuário"
+        full_access: "Administrador"
+        restricted_access: "Usuário"

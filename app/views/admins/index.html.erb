@@ -4,6 +4,12 @@
             <div class="panel-default">
               <div class="panel-heading">
                 Usuários
+                <%= link_to new_admin_path,
+                class:"btn btn-success btn-circle pull-right", style:"margin-top: -5px" do %>
+                  <i class="fa fa-plus"></i>
+
+                <% end %>
+
               </div>
 
               <table class="table table-striped">
@@ -29,9 +35,10 @@
 
         <% end %>
 
-              <br>
-                  <%= link_to 'Cadastrar Usuário', new_admin_path, class: "btn btn-success pull-right"  %>
-              <br/>
+
+                  <%= link_to new_admin_path do %>
+                  <% end %>
+
         </tr>
 
 
