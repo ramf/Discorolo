@@ -5,8 +5,7 @@
               <div class="panel-heading">
                 Usuários
                 <%= link_to new_admin_path,
-
-                        class:"btn btn-success btn-circle pull-right", style:"margin-top: -5px" do %>
+                  class:"btn btn-success btn-circle pull-right", style:"margin-top: -5px" do %>
                           <i class="fa fa-plus"></i>
 
                 <% end %>
@@ -30,6 +29,11 @@
               <td><%= user.name %></td>
               <td><%= user.email %></td>
               <td><%= user.role %></td>
+
+              <!-- <td><%= link_to fa_icon("trash-o", title: "Excluir"), admins_index_path(user), method: :delete, data: { confirm: 'Você tem certeza?' }, class: "btn btn-danger" %></td> -->
+
+
+              </td>
 
 
 

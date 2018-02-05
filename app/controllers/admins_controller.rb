@@ -1,5 +1,5 @@
 class AdminsController < ApplicationController
-  prepend_before_action :require_no_authentication, only: [:cancel ]
+  prepend_before_action :require_no_authentication, only: [:cancel]
 
   def index
     @user = User.new
@@ -21,10 +21,6 @@ class AdminsController < ApplicationController
       render :new
     end
   end
-
-
-
-
 
 
   private

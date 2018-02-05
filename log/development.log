@@ -39765,3 +39765,806 @@ Processing by AdminsController#index as HTML
 Completed 200 OK in 234ms (Views: 226.8ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 10:47:34 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AdminsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admins/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admins/index.html.erb within layouts/application (585.0ms)
+  Rendered layouts/_menu.html.erb (6.0ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 998ms (Views: 959.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admins/new" for 127.0.0.1 at 2018-02-05 10:47:39 -0300
+Processing by AdminsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admins/new.html.erb within layouts/application
+  Rendered admins/new.html.erb within layouts/application (8.3ms)
+  Rendered layouts/_menu.html.erb (2.2ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 210ms (Views: 207.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rails/info/routes?path=delete" for 127.0.0.1 at 2018-02-05 10:49:36 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"delete"}
+Completed 200 OK in 3ms (Views: 0.3ms)
+
+
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 10:49:53 -0300
+Processing by AdminsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admins/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admins/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_menu.html.erb (1.8ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 111ms (Views: 81.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 10:52:12 -0300
+Processing by AdminsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admins/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admins/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_menu.html.erb (2.1ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 146ms (Views: 111.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 10:53:08 -0300
+Processing by AdminsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admins/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admins/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_menu.html.erb (2.8ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 95ms (Views: 91.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 10:53:10 -0300
+Processing by AdminsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admins/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admins/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_menu.html.erb (4.4ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 205ms (Views: 201.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 10:53:10 -0300
+Processing by AdminsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admins/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admins/index.html.erb within layouts/application (2.8ms)
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 10:53:10 -0300
+Processing by AdminsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admins/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admins/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_menu.html.erb (6.1ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 267ms (Views: 263.8ms | ActiveRecord: 0.5ms)
+
+
+  Rendered layouts/_menu.html.erb (2.2ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 122ms (Views: 115.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 10:53:12 -0300
+Processing by AdminsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admins/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admins/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_menu.html.erb (1.8ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 87ms (Views: 84.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 10:56:17 -0300
+Processing by AdminsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admins/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admins/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_menu.html.erb (2.4ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 102ms (Views: 98.3ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/admins/index.1" for 127.0.0.1 at 2018-02-05 10:56:19 -0300
+Processing by AdminsController#destroy as 
+  Parameters: {"authenticity_token"=>"pUUKSmUNQztsqhmEOTqrTCVZxjN+h7BIUNYE972BII+v6sPFkZCCJxjQiRaAD9nKWl0sF1AE7nTcQ4IfQI9wLA==", "id"=>"index"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/admins_controller.rb:27:in `destroy'
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 10:57:39 -0300
+  
+SyntaxError (/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:42: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/admins_controller.rb:42: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 10:57:53 -0300
+Processing by AdminsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admins/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admins/index.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_menu.html.erb (1.7ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 118ms (Views: 85.4ms | ActiveRecord: 2.1ms)
+
+
+Started DELETE "/admins/index.1" for 127.0.0.1 at 2018-02-05 10:57:55 -0300
+Processing by AdminsController#destroy as 
+  Parameters: {"authenticity_token"=>"iQcxtXYDj/H76Hh12J700BXtuJE8+FIt93+3BuE9iVKDqPg6gp5O7Y+S6Odhq4ZWaulStRJ7DBF76jHuHDPZ8Q==", "id"=>"index"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Completed 406 Not Acceptable in 3ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/admins_controller.rb:31:in `destroy'
+Started DELETE "/admins/index.1" for 127.0.0.1 at 2018-02-05 10:59:08 -0300
+Processing by AdminsController#destroy as 
+  Parameters: {"authenticity_token"=>"iQcxtXYDj/H76Hh12J700BXtuJE8+FIt93+3BuE9iVKDqPg6gp5O7Y+S6Odhq4ZWaulStRJ7DBF76jHuHDPZ8Q==", "id"=>"index"}
+Completed 500 Internal Server Error in 113ms
+
+
+  
+NoMethodError (undefined method `require_no_authentication' for #<AdminsController:0x007f160442ea70>
+Did you mean?  request_http_token_authentication):
+  
+activesupport (5.1.4) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.4) lib/active_support/callbacks.rb:178:in `block (2 levels) in halting_and_conditional'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.4) lib/active_support/callbacks.rb:179:in `block in halting_and_conditional'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.4) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started DELETE "/admins/index.1" for 127.0.0.1 at 2018-02-05 11:00:17 -0300
+  
+SyntaxError (/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:47: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/admins_controller.rb:47: syntax error, unexpected end-of-input, expecting keyword_end
+Started DELETE "/admins/index.1" for 127.0.0.1 at 2018-02-05 11:00:25 -0300
+Processing by AdminsController#destroy as 
+  Parameters: {"authenticity_token"=>"iQcxtXYDj/H76Hh12J700BXtuJE8+FIt93+3BuE9iVKDqPg6gp5O7Y+S6Odhq4ZWaulStRJ7DBF76jHuHDPZ8Q==", "id"=>"index"}
+Completed 500 Internal Server Error in 109ms
+
+
+  
+NoMethodError (undefined method `require_no_authentication' for #<AdminsController:0x007f160e19f3b8>
+Did you mean?  request_http_token_authentication):
+  
+activesupport (5.1.4) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.4) lib/active_support/callbacks.rb:178:in `block (2 levels) in halting_and_conditional'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.4) lib/active_support/callbacks.rb:179:in `block in halting_and_conditional'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.4) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started DELETE "/admins/index.1" for 127.0.0.1 at 2018-02-05 11:03:50 -0300
+Started GET "/" for 127.0.0.1 at 2018-02-05 11:04:00 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_menu.html.erb (1.9ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 115ms (Views: 88.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:04:02 -0300
+Started GET "/" for 127.0.0.1 at 2018-02-05 11:04:29 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (590.9ms)
+  Rendered layouts/_menu.html.erb (6.3ms)
+  Rendered layouts/_messages.html.erb (1.5ms)
+Completed 200 OK in 1008ms (Views: 969.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:04:32 -0300
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:07:29 -0300
+Started GET "/records/new" for 127.0.0.1 at 2018-02-05 11:07:33 -0300
+Processing by RecordsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/_form.html.erb (24.8ms)
+  Rendered records/new.html.erb within layouts/application (26.5ms)
+  Rendered layouts/_menu.html.erb (1.7ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 179ms (Views: 118.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:07:35 -0300
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:07:52 -0300
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:07:53 -0300
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:07:53 -0300
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:08:22 -0300
+Processing by AdminsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admins/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admins/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_menu.html.erb (2.4ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 126ms (Views: 94.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:08:23 -0300
+Processing by AdminsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admins/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admins/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_menu.html.erb (4.4ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 206ms (Views: 201.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:08:25 -0300
+Processing by AdminsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admins/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admins/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_menu.html.erb (4.6ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 186ms (Views: 180.9ms | ActiveRecord: 1.5ms)
+
+
+Started DELETE "/admins/index.1" for 127.0.0.1 at 2018-02-05 11:08:29 -0300
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for AdminsController):
+  
+actionpack (5.1.4) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:09:45 -0300
+  
+SyntaxError (/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+cado excluído com sucesso.' }
+                              ^
+/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+app/controllers/admins_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:10:07 -0300
+  
+SyntaxError (/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+cado excluído com sucesso.' }
+                              ^
+/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+app/controllers/admins_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:11:59 -0300
+  
+SyntaxError (/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+cado excluído com sucesso.' }
+                              ^
+/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+app/controllers/admins_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:11:59 -0300
+  
+SyntaxError (/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+cado excluído com sucesso.' }
+                              ^
+/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+app/controllers/admins_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:12:00 -0300
+  
+SyntaxError (/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+cado excluído com sucesso.' }
+                              ^
+/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+app/controllers/admins_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:12:00 -0300
+  
+SyntaxError (/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+cado excluído com sucesso.' }
+                              ^
+/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+app/controllers/admins_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:12:00 -0300
+  
+SyntaxError (/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+cado excluído com sucesso.' }
+                              ^
+/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+app/controllers/admins_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:12:00 -0300
+  
+SyntaxError (/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+cado excluído com sucesso.' }
+                              ^
+/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+app/controllers/admins_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:12:19 -0300
+  
+SyntaxError (/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+cado excluído com sucesso.' }
+                              ^
+/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+app/controllers/admins_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:12:20 -0300
+  
+SyntaxError (/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+cado excluído com sucesso.' }
+                              ^
+/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+app/controllers/admins_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:12:21 -0300
+  
+SyntaxError (/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+cado excluído com sucesso.' }
+                              ^
+/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+app/controllers/admins_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:12:30 -0300
+  
+SyntaxError (/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+cado excluído com sucesso.' }
+                              ^
+/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:42: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+app/controllers/admins_controller.rb:42: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:12:35 -0300
+  
+SyntaxError (/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+cado excluído com sucesso.' }
+                              ^
+/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:43: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+app/controllers/admins_controller.rb:43: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:12:36 -0300
+  
+SyntaxError (/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+cado excluído com sucesso.' }
+                              ^
+/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:43: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+app/controllers/admins_controller.rb:43: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:12:36 -0300
+  
+SyntaxError (/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+cado excluído com sucesso.' }
+                              ^
+/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:43: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+app/controllers/admins_controller.rb:43: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:13:45 -0300
+Processing by AdminsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admins/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admins/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_menu.html.erb (1.9ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 116ms (Views: 83.6ms | ActiveRecord: 1.6ms)
+
+
+Started DELETE "/admins/index.1" for 127.0.0.1 at 2018-02-05 11:13:49 -0300
+Processing by AdminsController#destroy as 
+  Parameters: {"authenticity_token"=>"QxAfqcDycWkMA7KryNm0kUveBCZlXa0O+UFc4+UfaxVJv9YmNG+wdXh5Ijlx7MYXNNruAkve8zJ11NoLGBE7tg==", "id"=>"index"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/admins_controller.rb:29:in `destroy'
+Started DELETE "/admins/index.1" for 127.0.0.1 at 2018-02-05 11:13:59 -0300
+Processing by AdminsController#destroy as 
+  Parameters: {"authenticity_token"=>"QxAfqcDycWkMA7KryNm0kUveBCZlXa0O+UFc4+UfaxVJv9YmNG+wdXh5Ijlx7MYXNNruAkve8zJ11NoLGBE7tg==", "id"=>"index"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Completed 406 Not Acceptable in 38ms (ActiveRecord: 2.2ms)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/admins_controller.rb:30:in `destroy'
+Started GET "/" for 127.0.0.1 at 2018-02-05 11:14:20 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_menu.html.erb (3.5ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 164ms (Views: 131.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:14:22 -0300
+  
+SyntaxError (/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+cado excluído com sucesso.' }
+                              ^
+/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+app/controllers/admins_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2018-02-05 11:14:35 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_menu.html.erb (2.9ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 143ms (Views: 110.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:14:36 -0300
+  
+SyntaxError (/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+cado excluído com sucesso.' }
+                              ^
+/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+app/controllers/admins_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:15:13 -0300
+  
+SyntaxError (/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+cado excluído com sucesso.' }
+                              ^
+/home/tj.ce.gov.br/05598766370/Documentos/Discorolo/app/controllers/admins_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/admins_controller.rb:30: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+app/controllers/admins_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:15:37 -0300
+Started GET "/" for 127.0.0.1 at 2018-02-05 11:15:41 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_menu.html.erb (1.7ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 112ms (Views: 80.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:15:42 -0300
+Started GET "/" for 127.0.0.1 at 2018-02-05 11:16:53 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  Rendered records/index.html.erb within layouts/application (610.2ms)
+  Rendered layouts/_menu.html.erb (4.9ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 1005ms (Views: 972.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:16:56 -0300
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:17:08 -0300
+Processing by AdminsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admins/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admins/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_menu.html.erb (2.8ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 117ms (Views: 84.8ms | ActiveRecord: 2.1ms)
+
+
+Started DELETE "/admins/index.1" for 127.0.0.1 at 2018-02-05 11:17:11 -0300
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for AdminsController):
+  
+actionpack (5.1.4) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-05 11:17:39 -0300
+Processing by AdminsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admins/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admins/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_menu.html.erb (1.6ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 100ms (Views: 96.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admins/new" for 127.0.0.1 at 2018-02-05 11:17:48 -0300
+Processing by AdminsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admins/new.html.erb within layouts/application
+  Rendered admins/new.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_menu.html.erb (1.7ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 84ms (Views: 81.6ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-02-05 11:18:03 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3uNUvGI2Ma4hs8HMz/cp/RBkleDVhW1jSW9SZAUwJ33UTJ0zlqvwslXJUV52wlt7b2B/xPsGM1/F+tSM+D533g=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 18ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-05 11:18:03 -0300
+Processing by RecordsController#index as HTML
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-02-05 11:18:03 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_menu.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 227ms (Views: 223.7ms | ActiveRecord: 0.0ms)
+
+
