@@ -13,18 +13,12 @@
 
 User.create(name: "Romênia Irlandia Soares Dutra",
             email: "8776",
-            password: '123456',
+            password: 'r123456',
             role: 0
 )
 
 User.create(name: "Marcia Maria Freitas de Queiroz",
             email: "287",
-            password: '123456',
+            password: 'm123456',
             role: 0
-)
-
-User.create(name: "João Alfredo Pinto Moreira",
-            email: "05598766370",
-            password: '123456',
-            role: 1
 )

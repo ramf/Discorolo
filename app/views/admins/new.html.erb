@@ -1,28 +1,71 @@
 <h1>Cadastro de novo Usuário</h1>
+    <% if notice %>
+        <div class="alert alert-success alert-dismissable">
+          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
+          <% notice %>
+        </div>
+    <% end %>
 
-
-            <div class="panel-default">
-                  <div class="panel-heading">
-                    Informe os Dados
-                  </div>
-                  <div class="panel-body">
-                    <div class="col-lg-6">
-                          <div class="form-group">
-                            <label> Nome </label>
-                            <input class="form-control" placeholder="Ex: Fulano da Silva">
+                    <div class="panel-default">
+                          <div class="panel-heading">
+                            Insira os Dados
                           </div>
-                    </div>
-                  </div>
+                      <%= form_for(@user) do |f| %>
 
-                    <div class="panel-body">
+                      <div class="panel-body">
+                        <div class="col-lg-6">
+                          <div class="form-group">
+                              <label>Permissão do Usuário</label>
+                                <%= f.select :role, [['Administrador', 'full_access'],['Usuário', 'restricted_access']], id: :user_role %>
+                          </div>
 
-                      <div class="col-lg-6">
-                            <div class="form-group">
-                              <label> Matricula </label>
-                              <input class="form-control" placeholder="Ex: 924">
-                            </div>
+                        </div>
                       </div>
-                    </div>
+                                <div class="panel-body">
+                                  <div class="col-lg-6">
+                                        <div class="form-group">
+                                          <label> Nome </label>
+                                              <%= f.text_field :name, class:"form-control", placeholder:"Ex: Fulano da Silva" %>
+                                        </div>
+                                  </div>
+                                </div>
 
-                      <button type="submit" class="btn btn-success">Cadastrar</button>
-            </div>
+                                  <div class="panel-body">
+
+                                    <div class="col-lg-6">
+                                          <div class="form-group">
+                                            <label> Matricula </label>
+                                                <%= f.text_field :email, class:"form-control", placeholder:"Ex: 924" %>
+                                          </div>
+                                    </div>
+                                  </div>
+
+
+
+
+                                  <div class="panel-body">
+
+                                    <div class="col-lg-6">
+                                          <div class="form-group">
+                                            <label> Senha </label>
+                                                <%= f.password_field :password, class:"form-control", placeholder:"Ex: 123456" %>
+                                          </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="panel-body">
+
+                                    <div class="col-lg-6">
+                                          <div class="form-group">
+                                            <label> Confirme a Senha </label>
+                                                <%= f.password_field :password_confirmation, class:"form-control", placeholder:"Ex: 123456" %>
+                                          </div>
+                                    </div>
+                                  </div>
+
+
+                                    <button type="submit" class="btn btn-success">Cadastrar</button>
+                          <% end %>
+
+
+                    </div>
