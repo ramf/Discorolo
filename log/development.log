@@ -49022,3 +49022,158 @@ Processing by RecordsController#index as HTML
 Completed 200 OK in 133ms (Views: 128.9ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-02-07 16:50:04 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecordsController#index as HTML
+Completed 401 Unauthorized in 31ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-02-07 16:50:06 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1420.4ms)
+  Rendered layouts/_menu.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 2513ms (Views: 2488.9ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-02-07 16:50:18 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jej10lQt5Z/iwDxbFo5M6nPgAdk3rIm7mGZ5fdFEO95Wfq5rPFEDlGpcelsgSV0Hz8VSk+yu9icGlobLDvfgTA==", "user"=>{"email"=>"8776", "password"=>"[FILTERED]"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "8776"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-02-07 19:50:18.889265"], ["sign_in_count", 2], ["updated_at", "2018-02-07 19:50:18.890054"], ["id", 1]]
+  [1m[35m (98.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 511ms (ActiveRecord: 100.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-07 16:50:19 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT  "records".* FROM "records" ORDER BY "records"."dataprotocol" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  Rendered records/index.html.erb within layouts/application (29.2ms)
+  Rendered layouts/_menu.html.erb (5.4ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 319ms (Views: 255.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-07 16:50:22 -0300
+Processing by AdminsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admins/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admins/index.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_menu.html.erb (7.1ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 264ms (Views: 236.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-02-07 16:50:46 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT  "records".* FROM "records" ORDER BY "records"."dataprotocol" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  Rendered records/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_menu.html.erb (4.8ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 243ms (Views: 238.1ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-02-07 16:50:47 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"To56sF0sgARCGeqRNd+T9brz9HXYfzlgiNvkH56q+o245o1JRkyQz4iIYyGErP5zoNlgH1CO1qYic3ENERQNYQ=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 35ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-07 16:50:48 -0300
+Processing by RecordsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-02-07 16:50:48 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_menu.html.erb (1.6ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 257ms (Views: 255.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-07 17:02:25 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecordsController#index as HTML
+Completed 401 Unauthorized in 13ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-02-07 17:02:25 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (626.7ms)
+  Rendered layouts/_menu.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 1338ms (Views: 1319.5ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-02-07 17:02:34 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DqUlnJCiayCSnp85ajY8+1OlAH3gVDKzvKa21gMyzWpbbGLA3B8mQfQUtMOU5UeA979R7nWXMkNRVP1ARsX2Hg==", "user"=>{"email"=>"8776", "password"=>"[FILTERED]"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "8776"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-02-07 20:02:34.477072"], ["last_sign_in_at", "2018-02-07 19:50:18.889265"], ["sign_in_count", 3], ["updated_at", "2018-02-07 20:02:34.477893"], ["id", 1]]
+  [1m[35m (72.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 215ms (ActiveRecord: 74.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-07 17:02:34 -0300
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering records/index.html.erb within layouts/application
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT  "records".* FROM "records" ORDER BY "records"."dataprotocol" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  Rendered records/index.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_menu.html.erb (5.9ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 257ms (Views: 246.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admins/index" for 127.0.0.1 at 2018-02-07 17:02:35 -0300
+Processing by AdminsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admins/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admins/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_menu.html.erb (5.7ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 233ms (Views: 227.4ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-02-07 17:02:47 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3RxlbhKaBl7Ar/Z9wRuuu01Y+wWBrSpXdawoKHtbIBKc5jl8XS9ZljGUEU0ISAN3qmcvK4xb+6VL7hmRAhsC+A=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-07 17:02:47 -0300
+Processing by RecordsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-02-07 17:02:47 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_menu.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 229ms (Views: 228.1ms | ActiveRecord: 0.0ms)
+
+
