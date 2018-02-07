@@ -2,15 +2,7 @@
 
 
             <div class="panel-default">
-              <div class="panel-heading">
-                Usuários
-                <%= link_to new_admin_path,
-                  class:"btn btn-success btn-circle pull-right", style:"margin-top: -5px" do %>
-                          <i class="fa fa-plus"></i>
 
-                <% end %>
-
-              </div>
 
               <table class="table table-striped">
   <thead>
@@ -19,9 +11,10 @@
       <th><%= t("activerecord.attributes.user.nome")%></th>
       <th><%= t("activerecord.attributes.user.matricula")%></th>
       <th><%= t("activerecord.attributes.user.tipo_de_usuário")%></th>
-      <th colspan="3"></th>
+      <th colspan="3"><%= link_to fa_icon("user-plus", title: "Adicionar Usuário"), new_admin_path, class: "btn btn-success center", style:"margin-top: -5px" %></th>
     </tr>
   </thead>
+
   <tbody>
         <% @users.each do |user| %>
         <tr>
@@ -30,20 +23,15 @@
               <td><%= user.email %></td>
               <td><%= user.role %></td>
 
-              <td><%= link_to admin_path(user), method: :delete, class: "btn btn-danger" do %>
+              <!-- <td><%= link_to admin_path(user), method: :delete, class: "btn btn-danger" do %>
                   <i class="fa fa-minus"></i>
-              </td>
-              <%end%>
+              </td> -->
 
+              <td><%= link_to fa_icon("trash-o", title: "Excluir Usuário"), admin_path(user), method: :delete, data: { confirm: 'Você tem certeza?' }, class: "btn btn-danger" %></td>
+
+                <% end %>
 
         <% end %>
-                  <%= link_to new_admin_path do %>
-                  <% end %>
-
         </tr>
-        
-
-
-
 
   </tbody>
