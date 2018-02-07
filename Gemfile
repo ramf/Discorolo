@@ -28,6 +28,8 @@ gem 'gruff'
 gem 'devise'
 gem 'devise-i18n'
 gem 'enum_help'
+gem 'ransack'
+gem 'kaminari'
 
 #font-awesome-rails
 gem "font-awesome-rails"

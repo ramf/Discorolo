@@ -5,6 +5,10 @@ class RecordsController < ApplicationController
   # GET /records.json
   def index
     @records = Record.all
+    @q = Record.ransack(params[:q])
+    @records = @q.result.order(:dataprotocol).page(params[:page]).per(10)
+
+
 
   end
 

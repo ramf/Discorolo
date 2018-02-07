@@ -1,16 +1,19 @@
 class AdminsController < ApplicationController
   prepend_before_action :require_no_authentication, only: [:cancel]
+  before_action :set_user, only: [:destroy]
 
   def index
     @user = User.new
     authorize @user
     @users = User.all
+
+    
   end
 
   def new
     @user = User.new
-    @users = User.all
     authorize @user
+    @users = User.all
   end
 
   def create
@@ -20,6 +23,17 @@ class AdminsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def destroy
+
+    @user.destroy
+    redirect_to admins_path, notice: "Usuário excluído com sucesso!"
+
+  end
+
+  def set_user
+    @user = User.find(params[:id])
   end
 
 

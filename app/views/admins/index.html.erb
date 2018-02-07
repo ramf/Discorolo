@@ -30,20 +30,18 @@
               <td><%= user.email %></td>
               <td><%= user.role %></td>
 
-              <!-- <td><%= link_to fa_icon("trash-o", title: "Excluir"), admins_index_path(user), method: :delete, data: { confirm: 'Você tem certeza?' }, class: "btn btn-danger" %></td> -->
-
-
+              <td><%= link_to admin_path(user), method: :delete, class: "btn btn-danger" do %>
+                  <i class="fa fa-minus"></i>
               </td>
-
+              <%end%>
 
 
         <% end %>
-
-
                   <%= link_to new_admin_path do %>
                   <% end %>
 
         </tr>
+        
 
 
 
